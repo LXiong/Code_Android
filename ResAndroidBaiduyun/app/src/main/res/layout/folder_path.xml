@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.netdisk.ui.localfile.FolderPathLayout android:id="@id/folder_path" android:background="@drawable/path_bar_bg" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="-3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.CustomHorizontalScrollView android:layout_gravity="center" android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="35.0dip">
+        <com.baidu.netdisk.ui.widget.CustomLinearLayout android:orientation="horizontal" android:id="@id/folder_path_linear" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </com.baidu.netdisk.ui.widget.CustomHorizontalScrollView>
+    <ImageButton android:id="@id/path_over_btn" android:background="@drawable/path_over_item" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+</com.baidu.netdisk.ui.localfile.FolderPathLayout>

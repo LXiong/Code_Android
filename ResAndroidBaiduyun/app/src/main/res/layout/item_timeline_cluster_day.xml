@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/timeline_cluster_normal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/timeline_cluster_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" style="@style/NetDisk.TextAppearance.Smaller.Blue" />
+        <TextView android:gravity="center" android:id="@id/timeline_cluster_key" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/timeline_cluster_condition" style="@style/NetDisk.TextAppearance.Huge.Blue.Blod" />
+        <TextView android:id="@id/timeline_cluster_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/cloudimage_timeline_cluster_day" android:layout_toRightOf="@id/timeline_cluster_key" style="@style/NetDisk.TextAppearance.Smaller.Blue" />
+        <TextView android:id="@id/timeline_cluster_image_count_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/timeline_cluster_condition" style="@style/NetDisk.TextAppearance.Smaller.Blue" />
+    </RelativeLayout>
+    <include android:id="@id/timeline_cluster_no_date" layout="@layout/item_timeline_cluster_no_date" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/location_image_layout" android:background="@drawable/multi_image_pin" android:layout_width="@dimen/location_images_item_background_size" android:layout_height="@dimen/location_images_item_background_size">
+        <ImageView android:id="@id/location_image_shower" android:layout_width="@dimen/location_images_item_image_size" android:layout_height="@dimen/location_images_item_image_size" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="@dimen/location_images_item_count_size" android:layout_height="@dimen/location_images_item_count_size" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_count_pin" />
+            <TextView android:id="@id/location_image_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

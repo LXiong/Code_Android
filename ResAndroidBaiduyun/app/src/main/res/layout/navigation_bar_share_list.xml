@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/navigation_bar_add" android:background="@drawable/title_bar_bg_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_add_button" android:singleLine="true" android:drawableLeft="@drawable/navigation_bar_add_icon" android:drawablePadding="4.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Small.White" />
+    </RelativeLayout>
+    <View android:background="@drawable/title_bar_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/navigation_bar_friends" android:background="@drawable/title_bar_bg_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_myfriends_button" android:singleLine="true" android:drawableLeft="@drawable/navigation_bar_friends_icon" android:drawablePadding="4.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Small.White" />
+    </RelativeLayout>
+    <View android:background="@drawable/title_bar_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/navigation_bar_transfer_list" android:background="@drawable/title_bar_bg_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@id/navigation_bar_transfer_list_content" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_transferlist_button" android:singleLine="true" android:drawableLeft="@drawable/navigation_bar_transferlist_icon" android:drawablePadding="4.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Small.White" />
+            <ImageView android:id="@id/transfer_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tip" android:layout_alignRight="@id/navigation_bar_transfer_list_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

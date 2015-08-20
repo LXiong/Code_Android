@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/NetDisk.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_strengthen_list_icon" android:src="@drawable/strengthen_list_item_default_icon" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <ImageView android:id="@id/item_strengthen_list_tag_of_recommend" android:visibility="visible" android:src="@drawable/strengthen_list_apptag_isrecommend" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <TextView android:ellipsize="end" android:id="@id/item_strengthen_list_name" android:paddingTop="@dimen/item_content_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/item_strengthen_list_op_button" android:layout_toRightOf="@id/item_strengthen_list_icon" android:layout_alignParentTop="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <TextView android:ellipsize="end" android:id="@id/item_strengthen_list_desc" android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/item_strengthen_list_op_button" android:layout_alignLeft="@id/item_strengthen_list_name" android:layout_alignParentBottom="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    <Button android:id="@id/item_strengthen_list_op_button" android:background="@drawable/button_gray_selector" android:focusable="false" android:clickable="true" android:layout_width="45.0dip" android:layout_height="34.0dip" android:layout_marginRight="8.0dip" android:text="@string/remove" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+</RelativeLayout>

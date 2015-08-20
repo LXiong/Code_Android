@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/login_to_relate_title" layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/login_to_relate_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="#ff409be4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/how_to_relate_pc" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/how_to_relate_pc_des" android:textAlignment="center" />
+                <ImageView android:id="@id/line" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginTop="50.0dip" android:src="@drawable/line_division" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff409be4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/how_to_keep_pc_online" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:text="@string/how_to_keep_pc_online_des" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/how_to_keep_pc_online_des_first" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/how_to_keep_pc_online_des_second" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/how_to_keep_pc_online_des_third" />
+                <ImageView android:layout_width="211.0dip" android:layout_height="103.0dip" android:layout_marginTop="33.0dip" android:layout_marginBottom="50.0dip" android:src="@drawable/login_to_relate" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.netdisk.ui.widget.ColorfulProgressView android:id="@id/quota_progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/quota_progress_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

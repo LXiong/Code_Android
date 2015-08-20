@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:background="@drawable/child_tab_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.ui.widget.pagertabstrip.PagerFixedTabStrip android:id="@id/pager_tab_strip" style="@style/NetDisk.PageTabStrip.Fixed" />
+        <android.support.v4.view.ViewPager android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pager_tab_strip" />
+        <ImageView android:background="@drawable/child_tab_bottom_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pager_tab_strip" />
+    </RelativeLayout>
+</LinearLayout>

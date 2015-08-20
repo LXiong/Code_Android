@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <include layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_marginBottom="4.5dip" layout="@layout/view_settings_sub_head" />
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/pim_auto_sync" netdisk:item_title="@string/pim_synchro" netdisk:show_checkbox="true" netdisk:key_checkbox="config_address" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Top" />
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/view_contact_time_machine_entry" netdisk:item_title="@string/contact_time_machine" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Bottom" />
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="23.0dip" android:text="@string/pim_backups_info" android:drawableLeft="@drawable/icon_color_backup_to_cloud" android:drawablePadding="6.0dip" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="21.0dip" android:text="@string/pim_recover_info" android:drawableLeft="@drawable/icon_color_recover_to_phone" android:drawablePadding="6.0dip" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:background="@color/blue_black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/pim_manage" android:drawableLeft="@drawable/album_manage" android:drawablePadding="@dimen/set_item_icon_title_padding" style="@style/NetDisk.TextAppearance.Smaller.White" />
+    </LinearLayout>
+</LinearLayout>

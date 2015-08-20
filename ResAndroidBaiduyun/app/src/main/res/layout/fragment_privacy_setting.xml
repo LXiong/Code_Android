@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <LinearLayout android:orientation="vertical" android:paddingTop="4.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/code_lock_setting" netdisk:item_icon="@drawable/icon_code_lock_setting" netdisk:item_title="@string/set_coded_lock" netdisk:show_guide_arrow="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Single" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView netdisk:item_icon="@drawable/icon_blacklist_setting" netdisk:item_title="@string/blacklist_title" netdisk:entry_class="com.baidu.netdisk.cloudp2p.ui.BlackListActivity" netdisk:show_guide_arrow="true" style="@style/NetDisk.SettingItem.Single" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/forbid_stranger_msg" android:clickable="false" netdisk:item_icon="@drawable/icon_message_shield_setting" netdisk:item_title="@string/settings_forbid_stranger_msg" netdisk:show_checkbox="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Top" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/search_me_by_phone_number" android:clickable="false" netdisk:item_icon="@drawable/icon_search_me_from_phone_number_setting" netdisk:item_title="@string/settings_search_me_by_phone_number" netdisk:show_checkbox="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Middle" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/recommend_me" android:clickable="false" netdisk:item_icon="@drawable/icon_recommend_me_setting" netdisk:item_title="@string/settings_recommend_me" netdisk:show_checkbox="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Bottom" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" style="@style/NetDisk.ToolBar.WithNormalButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/fragment_share_file_download_button" android:background="@drawable/button_blue_selector" android:text="@string/quick_action_download" style="@style/NetDisk.ToolBar.Button.Normal.Long" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/loading" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cloudp2p_sharefile_detail_loading" style="@style/NetDisk.TextAppearance.Middle.White" />
+</LinearLayout>

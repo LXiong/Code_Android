@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/thumbnail" android:paddingLeft="26.0dip" android:paddingTop="14.0dip" android:paddingRight="26.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_default" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/fileName" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="2" style="@style/NetDisk.TextAppearance.Large.Black" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/fileSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/NetDisk.TextAppearance.Large.Gray" />
+    </LinearLayout>
+</RelativeLayout>

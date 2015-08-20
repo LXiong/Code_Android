@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/app_icon_layout" android:layout_width="64.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/app_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="9.0dip" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/app_checkbox" android:background="@drawable/imageview_select_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/app_icon_layout" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/app_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/app_name" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Least.Gray" />
+</RelativeLayout>

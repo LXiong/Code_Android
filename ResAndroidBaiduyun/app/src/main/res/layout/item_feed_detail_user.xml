@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_gray" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.baidu.netdisk.ui.widget.CircleImageView android:id="@id/feed_detail_item_icon" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/default_user_head_icon" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toLeftOf="@id/feed_detail_checkbox_attention" android:layout_toRightOf="@id/feed_detail_item_icon" android:layout_alignTop="@id/feed_detail_item_icon">
+            <TextView android:ellipsize="end" android:id="@id/feed_detail_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:singleLine="true" style="@style/NetDisk.TextAppearance.Large.Black" />
+            <TextView android:id="@id/feed_detail_item_info" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+        </LinearLayout>
+        <com.baidu.netdisk.personalpage.ui.widget.NetdiskFollowView android:id="@id/feed_detail_checkbox_attention" android:visibility="gone" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/feed_detail_item_share_summary_l" android:background="@drawable/feed_detail_item_desc_area_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="8.0dip" style="@style/NetDisk.TextAppearance.Middle.Black" />
+</LinearLayout>

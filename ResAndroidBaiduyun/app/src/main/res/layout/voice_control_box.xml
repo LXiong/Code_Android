@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.VerticalSeekBar android:id="@id/voiceSeekBar" android:layout_width="23.0dip" android:layout_height="100.0dip" android:progressDrawable="@drawable/progress_vertical" android:thumb="@drawable/voice_handle" android:thumbOffset="15.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

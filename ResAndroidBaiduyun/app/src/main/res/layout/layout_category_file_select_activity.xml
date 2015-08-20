@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/totalLayout" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <include android:id="@id/upload_category" layout="@layout/upload_category_layout" />
+    <View android:background="@drawable/mainlist_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include android:id="@id/layout_list_view" layout="@layout/layout_emptyview" />
+    <include android:id="@id/folder_detail_layout_pic_grid_view" layout="@layout/folder_layout_pic_grid_view" />
+    <com.baidu.netdisk.ui.widget.ColorfulProgressView android:id="@id/colorfull_progress_view" android:layout_width="fill_parent" android:layout_height="@dimen/quota_progress_bar_height" />
+    <include layout="@layout/select_remote_path_view" />
+</LinearLayout>

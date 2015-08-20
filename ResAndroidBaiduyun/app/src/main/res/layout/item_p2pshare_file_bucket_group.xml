@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_white_gray_background" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bucket_cover_backgroud" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/multi_image_pin" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/bucket_cover" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginLeft="7.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    <TextView android:ellipsize="middle" android:id="@id/bucket_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="40.0dip" android:singleLine="true" android:layout_toRightOf="@id/bucket_cover_backgroud" style="@style/NetDisk.TextAppearance.Small.Black" />
+    <TextView android:id="@id/photo_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/bucket_cover_backgroud" android:layout_below="@id/bucket_name" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    <CheckBox android:id="@id/select_all_checkbox" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" style="@style/EditCheckboxStyle" />
+</RelativeLayout>

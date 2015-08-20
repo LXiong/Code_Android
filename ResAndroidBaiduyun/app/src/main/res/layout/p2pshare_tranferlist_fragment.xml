@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/edit_tools_box" android:visibility="gone" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.ToolBar.WithIconButton">
+        <Button android:id="@id/edit_tools_delete_btn" android:text="@string/quick_action_delete" android:drawableTop="@drawable/edit_tools_delete_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/padding_box" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/edit_tools_box">
+        <ExpandableListView android:id="@id/transfer_recorder_list" android:layout_marginTop="8.0dip" android:listSelector="@android:color/transparent" android:childDivider="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" style="@style/NetDisk.ExpandableListView" />
+        <com.baidu.netdisk.ui.widget.EmptyView android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/transfer_list_empty"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    </RelativeLayout>
+</RelativeLayout>

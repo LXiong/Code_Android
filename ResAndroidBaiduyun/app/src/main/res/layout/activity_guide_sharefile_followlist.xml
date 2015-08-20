@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/follow_list" style="@style/NetDisk.ListView" />
+        <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/contacts_list_no_data"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    </RelativeLayout>
+    <include android:layout_gravity="bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/group_member_list_bottom" />
+</LinearLayout>

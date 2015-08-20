@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/totalLayout" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/layout_emptyview" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.ui.widget.ListViewEx android:id="@id/file_list_view" android:fastScrollEnabled="true" android:overScrollMode="never" style="@style/NetDisk.ListView" />
+        <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/this_folder_is_empty"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/layout_select" style="@style/NetDisk.ToolBar.WithNormalButton">
+        <Button android:id="@id/cancel" android:background="@drawable/button_darkgray_selector" android:text="@string/cancel" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+        <Button android:enabled="false" android:id="@id/ok" android:background="@drawable/button_blue_selector" android:text="@string/ok" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+    </LinearLayout>
+</LinearLayout>

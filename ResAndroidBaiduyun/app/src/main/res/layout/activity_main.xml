@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content_view" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:id="@id/rg_tabs" android:layout_alignParentBottom="true" style="@style/NetDisk.MainTab">
+        <RadioButton android:id="@id/rb_filelist" android:button="@null" android:text="@string/tab_filelist" android:drawableTop="@drawable/tab_filelist" style="@style/NetDisk.MainTab.Button" />
+        <RadioButton android:id="@id/rb_share" android:button="@null" android:text="@string/tab_share" android:drawableTop="@drawable/tab_share" style="@style/NetDisk.MainTab.Button" />
+        <RadioButton android:id="@id/rb_discovery" android:button="@null" android:text="@string/tab_discovery" android:drawableTop="@drawable/tab_discovery" style="@style/NetDisk.MainTab.Button" />
+        <RadioButton android:id="@id/rb_about_me" android:button="@null" android:text="@string/tab_about_me" android:drawableTop="@drawable/tab_about_me" style="@style/NetDisk.MainTab.Button" />
+    </RadioGroup>
+</RelativeLayout>

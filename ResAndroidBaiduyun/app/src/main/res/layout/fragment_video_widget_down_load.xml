@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/filelist_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+    <TextView android:gravity="center_horizontal" android:id="@id/video_widget_newset_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="6.0dip" android:text="@string/video_widget_cue" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="14.0dip">
+        <com.baidu.netdisk.widget.TextProgressbar android:id="@id/video_widget_down_load_progress" android:visibility="gone" android:layout_width="fill_parent" style="@style/VideoWidgetBarProgressBar" />
+        <Button android:id="@id/video_widget_down_load_button" android:text="@string/video_widget_down_load_install" style="@style/PlayerPluginInstallButton" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/video_widget_download_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_widget_down_load_newest" style="@style/NetDisk.TextAppearance.Larger.Black" />
+    </FrameLayout>
+</LinearLayout>

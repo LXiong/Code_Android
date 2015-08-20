@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/light_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.widget.ZoomImageView android:id="@id/view_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <ProgressBar android:id="@id/image_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/NetDisk.ProgressBar.Medium" />
+</RelativeLayout>

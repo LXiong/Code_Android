@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:gravity="left" android:id="@id/tile_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smsmms_record_item_date" style="@style/NetDisk.TextAppearance.Small.Black" />
+        <TextView android:id="@id/record_text_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toRightOf="@id/tile_label" style="@style/NetDisk.TextAppearance.Small.Gray" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smsmms_record_item_success" android:layout_alignParentRight="true" style="@style/NetDisk.TextAppearance.Small.Green" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smsmms_record_item_action" style="@style/NetDisk.TextAppearance.Small.Black" />
+        <TextView android:ellipsize="middle" android:id="@id/record_text_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/NetDisk.TextAppearance.Small.Gray" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:id="@id/record_text_local_or_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/NetDisk.TextAppearance.Small.Black" />
+        <TextView android:ellipsize="middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/smsmms_record_item_add_text" android:singleLine="true" style="@style/NetDisk.TextAppearance.Small.Gray" />
+        <TextView android:ellipsize="middle" android:id="@id/record_text_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/NetDisk.TextAppearance.Small.Blue" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="20.0dip" android:text="@string/smsmms_record_item_num_label" style="@style/NetDisk.TextAppearance.Small.Gray" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/smsmms_record_item_total_count" style="@style/NetDisk.TextAppearance.Small.Gray" />
+        <TextView android:ellipsize="middle" android:id="@id/record_text_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/NetDisk.TextAppearance.Small.Blue" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/smsmms_record_item_num_label" style="@style/NetDisk.TextAppearance.Small.Gray" />
+    </LinearLayout>
+</LinearLayout>

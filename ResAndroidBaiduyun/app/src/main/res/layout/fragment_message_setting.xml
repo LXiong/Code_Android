@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <LinearLayout android:orientation="vertical" android:paddingTop="4.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/cloudp2p_receiver_new_message" android:clickable="false" netdisk:item_icon="@drawable/icon_friends_msg_setting" netdisk:item_title="@string/file_msg_setting" netdisk:show_checkbox="true" netdisk:key_checkbox="cloudp2p_receiver_new_message" netdisk:key_checkbox_default_value="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Single" />
+        <TextView android:gravity="center" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:layout_marginBottom="4.5dip" android:text="@string/message_receiver_info" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/cloudp2p_sound" android:clickable="false" netdisk:item_icon="@drawable/icon_sound_setting" netdisk:item_title="@string/common_sound" netdisk:show_checkbox="true" netdisk:key_checkbox="cloudp2p_sound" netdisk:key_checkbox_default_value="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Top" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/cloudp2p_shock" android:clickable="false" netdisk:item_icon="@drawable/icon_shock_setting" netdisk:item_title="@string/common_shock" netdisk:show_checkbox="true" netdisk:key_checkbox="cloudp2p_shock" netdisk:key_checkbox_default_value="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Bottom" />
+    </LinearLayout>
+</ScrollView>

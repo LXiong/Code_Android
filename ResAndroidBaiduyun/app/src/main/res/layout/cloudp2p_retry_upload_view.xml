@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_select" android:background="@drawable/toolbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/NetDisk.TextAppearance.Smaller.White" android:id="@id/upload_to_count" android:paddingTop="@dimen/toolbar_with_normal_button_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/cloudp2p_upload_faled_info" />
+    <LinearLayout style="@style/NetDisk.ToolBar.WithNormalButton">
+        <Button android:id="@id/btn_cancel" android:background="@drawable/button_darkgray_selector" android:text="@string/cloudp2p_cancel_uploading_confirm" android:singleLine="true" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+        <Button android:id="@id/btn_retry" android:background="@drawable/button_darkgray_selector" android:text="@string/retry" android:singleLine="true" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+        <Button android:id="@id/btn_share" android:background="@drawable/button_blue_selector" android:text="@string/cloudp2p_share_ignore_failed" android:singleLine="true" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_item_white_gray_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <RelativeLayout android:id="@id/all_reload_btn_box" android:focusable="false" android:visibility="gone" style="@style/NetDisk.ListViewItem">
+        <Button android:id="@id/all_reload_btn" android:background="@drawable/button_gray_selector" android:focusable="false" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:text="@string/all_reupload" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/item_box" android:layout_height="wrap_content" style="@style/NetDisk.ListViewItem">
+        <ImageView android:id="@id/icon" android:layout_marginTop="10.0dip" android:src="@drawable/icon_list_apk" style="@style/NetDisk.ListViewItem.Icon" />
+        <TextView android:ellipsize="middle" android:id="@id/desc" android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="desc" android:maxLines="1" android:layout_toRightOf="@id/icon" android:layout_below="@id/title" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        <RelativeLayout android:id="@id/btn_box" android:background="@drawable/transfer_btn_bg_selector" android:focusable="false" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/btn_src" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <com.baidu.netdisk.ui.widget.RotateProgress android:id="@id/progress_bar" android:layout_width="@dimen/rotate_progress_rectangle_width" android:layout_height="@dimen/rotate_progress_rectangle_height" android:layout_centerInParent="true" netdisk:width="@dimen/rotate_progress_rectangle_width" netdisk:height="@dimen/rotate_progress_rectangle_height" netdisk:progress_width="@dimen/rotate_progress_width" />
+        </RelativeLayout>
+        <CheckBox android:gravity="center" android:id="@id/checkbox" android:focusable="false" android:clickable="false" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="12.0dip" android:layout_alignParentRight="true" style="@style/EditCheckboxStyle" />
+        <TextView android:id="@id/task_status" android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:minWidth="30.0dip" android:layout_toLeftOf="@id/btn_box" android:layout_below="@id/title" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        <com.baidu.netdisk.ui.widget.EllipsizeTextView android:ellipsize="middle" android:id="@id/title" android:paddingTop="@dimen/item_content_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:layout_toLeftOf="@id/btn_box" android:layout_toRightOf="@id/icon" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    </RelativeLayout>
+</LinearLayout>

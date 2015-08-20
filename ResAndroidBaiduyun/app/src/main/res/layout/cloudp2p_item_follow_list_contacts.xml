@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head_layout" layout="@layout/list_groupbar" />
+    <RelativeLayout style="@style/NetDisk.ListViewItem">
+        <ImageView android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="48.0dip" android:src="@drawable/icon_unselected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/contact_name_root_view" android:paddingTop="@dimen/item_content_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="11.0dip" android:layout_toLeftOf="@id/contact_status_layout">
+            <TextView android:layout_gravity="bottom" android:id="@id/contact_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="姓名" style="@style/NetDisk.TextAppearance.Middle.Black" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/baiduyun_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/baiduyun_icon" />
+        </LinearLayout>
+        <TextView android:id="@id/contact_phone_text" android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13800138000" android:maxLines="1" android:layout_alignLeft="@id/contact_name_root_view" android:layout_alignRight="@id/contact_name_root_view" android:layout_alignParentBottom="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    </RelativeLayout>
+    <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

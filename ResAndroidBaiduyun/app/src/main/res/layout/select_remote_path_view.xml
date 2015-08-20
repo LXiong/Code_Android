@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_select" android:background="@drawable/toolbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/NetDisk.TextAppearance.Smaller.White" android:id="@id/upload_to_count" android:paddingTop="@dimen/toolbar_with_normal_button_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/select_upload_path" />
+    <LinearLayout style="@style/NetDisk.ToolBar.WithNormalButton">
+        <com.baidu.netdisk.ui.widget.ProgressButton android:ellipsize="middle" android:id="@id/upload_path" android:background="@drawable/button_darkgray_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:text="@string/category_netdisk" android:singleLine="true" android:drawableLeft="@drawable/folder_icon" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+        <Button android:enabled="false" android:id="@id/button_select_ok" android:background="@drawable/button_blue_selector" android:text="@string/upload" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+    </LinearLayout>
+</LinearLayout>

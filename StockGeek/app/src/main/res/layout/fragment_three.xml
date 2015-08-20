@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.little.stockgeek.FragmentThree">
+
+    <AutoCompleteTextView
+        android:id="@+id/autotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:hint="输入代码/简称/拼音"
+        />
+
+    <include layout="@layout/lv_header_for_mystock"/>
+
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"></LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip" style="@style/NetDisk.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/group_icon" android:src="@drawable/p2pshare_group_head" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <TextView android:textAppearance="@style/NetDisk.TextAppearance.Middle.Black" android:id="@id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/group_name" android:layout_toRightOf="@id/group_icon" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/more_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:src="@drawable/selector_pref_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

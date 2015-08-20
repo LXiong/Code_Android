@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="com.little.stockgeek.FragmentBlockA">
+
+
+    <include layout="@layout/lv_header_for_block"/>
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"></LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"></ListView>
+
+
+    <include layout="@layout/layout_block_up_down"
+            />
+
+</LinearLayout>

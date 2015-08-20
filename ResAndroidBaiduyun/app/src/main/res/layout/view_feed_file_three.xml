@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_there_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" netdisk:thumbWidth="186.0dip" netdisk:thumbHeight="186.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_there_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_there_3" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+    </LinearLayout>
+</LinearLayout>

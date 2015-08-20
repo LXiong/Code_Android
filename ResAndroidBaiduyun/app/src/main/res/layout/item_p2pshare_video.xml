@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_preview" android:background="@color/gray" android:layout_width="165.0dip" android:layout_height="80.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_p2pshare_video_cover" />
+    </FrameLayout>
+    <TextView android:textSize="9.0dip" android:textColor="@color/white" android:gravity="right" android:id="@id/tv_during" android:background="@color/black_60p_transparent" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="14.0dip" android:singleLine="true" android:layout_alignBottom="@id/fl_container" />
+    <TextView android:ellipsize="middle" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/tv_during" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+    <TextView android:ellipsize="middle" android:gravity="center" android:id="@id/tv_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/tv_title" style="@style/NetDisk.TextAppearance.Least.Gray" />
+    <ImageView android:id="@id/iv_selector" android:background="@drawable/imageview_select_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/edit_mode_layout" android:background="@drawable/title_bar_edit_mode_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center" android:id="@id/edit_left_button" android:background="@drawable/titlebar_edit_mode_button_selector" android:clickable="true" android:layout_width="64.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:text="@string/cancel" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Small.White" />
+    <TextView android:ellipsize="end" android:id="@id/edit_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@style/NetDisk.AppTitleBar" />
+    <Button android:gravity="center" android:id="@id/edit_right_button" android:background="@drawable/titlebar_edit_mode_button_selector" android:clickable="true" android:layout_width="64.0dip" android:layout_height="32.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Small.White" />
+</RelativeLayout>

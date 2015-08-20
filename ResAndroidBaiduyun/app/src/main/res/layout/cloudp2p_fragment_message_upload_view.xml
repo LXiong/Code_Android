@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/wap2netdiskBottomStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/loading_text_box" />
+    <include layout="@layout/cloudp2p_retry_upload_view" />
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/part1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_invate_method1_top" android:layout_centerHorizontal="true">
+                <TextView android:textSize="20.0dip" android:textColor="#ff409be4" android:id="@id/method_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zeroflow_invate_step_1" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/guide_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_invate_friend_top" android:text="@string/iphone_guide_one" android:singleLine="true" android:layout_below="@id/method_1" android:layout_centerInParent="true" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/guide_1" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zeroflow_invate_wifi" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ff81b640" android:id="@id/wifi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/wifi" android:layout_alignTop="@id/wifi" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/line" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginTop="@dimen/p2p_invate_line_top" android:src="@drawable/line_division" android:layout_below="@id/part1" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/part2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line" android:layout_centerHorizontal="true">
+                <TextView android:textSize="20.0dip" android:textColor="#ff409be4" android:id="@id/method_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_iphone_guid_divider" android:text="@string/zeroflow_invate_step_2" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/guide_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_invate_friend_top" android:text="@string/iphone_guide_two" android:singleLine="true" android:layout_below="@id/method_2" android:layout_centerInParent="true" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff81b640" android:id="@id/network_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/guide_2" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/line2" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginTop="@dimen/p2p_invate_line_top" android:src="@drawable/line_division" android:layout_below="@id/part2" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/part3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line2">
+                <TextView android:textSize="20.0dip" android:textColor="#ff409be4" android:id="@id/method_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_iphone_guid_divider" android:text="@string/zeroflow_invate_step_3" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/guide_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_invate_friend_top" android:text="@string/iphone_guide_three" android:singleLine="true" android:layout_below="@id/method_3" android:layout_centerInParent="true" />
+                <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/guide_btn" android:background="@drawable/button_green_selector" android:layout_width="172.0dip" android:layout_height="45.0dip" android:layout_marginTop="@dimen/p2p_invate_friend_top" android:text="@string/iphone_guide_btn" android:layout_below="@id/guide_3" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Middle.White" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

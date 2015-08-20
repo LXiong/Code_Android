@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content" style="@style/NetDisk.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mbox_detail_item_icon" android:layout_marginTop="12.0dip" style="@style/NetDisk.ListViewItem.Icon" />
+    <CheckBox android:id="@id/item_choose" android:padding="5.0dip" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/EditCheckboxStyle" />
+    <com.baidu.netdisk.ui.widget.EllipsizeTextView android:ellipsize="middle" android:id="@id/mbox_detail_item_name" android:paddingTop="@dimen/item_content_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="3" android:layout_toLeftOf="@id/item_choose" android:layout_toRightOf="@id/mbox_detail_item_icon" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <LinearLayout android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/mbox_detail_item_icon" android:layout_below="@id/mbox_detail_item_name" android:layout_alignLeft="@id/mbox_detail_item_name" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/mbox_detail_item_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="askjfl;ajkdfjadflkja;" android:maxLines="1" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        <TextView android:id="@id/mbox_detail_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="askjfl;ajkdfjadflkja;" android:maxLines="1" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/thumbnailBox" android:background="@drawable/ic_backup_pic_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cover_photo_0" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="4.0dip" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/cover_photo_1" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:scaleType="centerCrop" android:layout_toRightOf="@id/cover_photo_0" />
+        <ImageView android:id="@id/cover_photo_2" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:scaleType="centerCrop" android:layout_below="@id/cover_photo_0" />
+        <ImageView android:id="@id/cover_photo_3" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:scaleType="centerCrop" android:layout_toRightOf="@id/cover_photo_2" android:layout_below="@id/cover_photo_1" />
+    </RelativeLayout>
+    <FrameLayout android:background="@drawable/bucket_explore_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/thumbnailBox" android:layout_alignTop="@id/thumbnailBox" android:layout_alignRight="@id/thumbnailBox" android:layout_alignBottom="@id/thumbnailBox" />
+    <RelativeLayout android:id="@id/folder_hint_linear" android:background="@drawable/ic_pic_folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/thumbnailBox" android:layout_alignRight="@id/thumbnailBox" android:layout_alignBottom="@id/thumbnailBox">
+        <TextView android:textAppearance="@style/NetDisk.TextAppearance.Smaller.White" android:ellipsize="end" android:id="@id/folder_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:maxWidth="110.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="@style/NetDisk.TextAppearance.Smaller.White" android:ellipsize="end" android:id="@id/folder_title_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

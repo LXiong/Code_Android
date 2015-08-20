@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/top_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.ui.widget.PullWidgetListView android:id="@id/listview" android:fastScrollEnabled="true" style="@style/NetDisk.ListView" />
+        <include layout="@layout/tips_layout" />
+        <ScrollView android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/operation_bar_filelist" android:visibility="gone" style="@style/NetDisk.FileList.Header">
+                    <ImageView android:id="@id/button_sort_for_empty" android:src="@drawable/main_list_header_rank" style="@style/NetDisk.FileList.HeaderIcon" />
+                    <ImageView android:id="@id/button_create_folder_for_empty" android:src="@drawable/main_list_header_create_folder" style="@style/NetDisk.FileList.HeaderIcon" />
+                    <ImageView android:id="@id/button_search_for_empty" android:src="@drawable/main_list_header_search" style="@style/NetDisk.FileList.HeaderIcon" />
+                </LinearLayout>
+                <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/empty_view" android:paddingTop="40.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/transfer_list_empty"
+                  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <ViewStub android:id="@id/bottom_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/bottom_empty_view" android:background="@drawable/tabbar_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/main_tab_background_height" />
+</LinearLayout>

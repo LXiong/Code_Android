@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="50dip">
+
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dip">
+
+        <RadioButton
+            android:id="@+id/btnBlockUp"
+            android:text="涨幅排行"
+            android:textColor="#fff"
+            android:layout_width="0dip"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/block_btn_selector"
+            android:layout_height="fill_parent"/>
+
+        <RadioButton
+            android:id="@+id/btnBlockDown"
+            android:text="跌幅排行"
+            android:textColor="#fff"
+            android:background="@drawable/block_btn_selector"
+            android:layout_width="0dip"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

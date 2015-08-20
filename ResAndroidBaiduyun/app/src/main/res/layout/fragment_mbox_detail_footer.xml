@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NetDisk.ToolBar.WithNormalButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/mbox_detail_footer_save" android:background="@drawable/button_blue_selector" android:text="@string/personalpage_datail_footer_button_conserve" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+    <Button android:id="@id/mbox_detail_footer_download" android:background="@drawable/button_blue_selector" android:text="@string/personalpage_datail_footer_button_download" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+</LinearLayout>

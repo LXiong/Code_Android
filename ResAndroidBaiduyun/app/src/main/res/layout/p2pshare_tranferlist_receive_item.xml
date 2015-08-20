@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/user_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/user_icon" android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/default_user_head_icon" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:layout_toRightOf="@id/user_icon_layout">
+        <RelativeLayout android:id="@id/receive_recorder_info_layout" android:background="@drawable/cloudp2p_group_message_received_selector" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/transfer_controller_layout" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/btn_src" android:background="@drawable/transfer_recorder_pendding" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/receive_info_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/transfer_controller_layout">
+                <TextView android:ellipsize="middle" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/receive_task_text" android:layout_toRightOf="@id/username" android:layout_alignTop="@id/username" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+                <ImageView android:id="@id/icon" android:paddingTop="8.0dip" android:paddingBottom="9.0dip" android:layout_marginTop="3.0dip" android:layout_below="@id/username" android:layout_alignLeft="@id/username" android:layout_alignParentLeft="true" style="@style/NetDisk.ListViewItem.Icon" />
+                <TextView android:ellipsize="middle" android:id="@id/filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/icon" android:layout_below="@id/username" style="@style/NetDisk.TextAppearance.Middle.Black" />
+                <TextView android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/filename" android:layout_alignLeft="@id/filename" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+                <TextView android:gravity="center|right" android:id="@id/speed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/progress" android:layout_alignTop="@id/progress" android:layout_alignParentRight="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+            </RelativeLayout>
+            <CheckBox android:id="@id/checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/EditCheckboxStyle" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/progress_horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/NetDisk.ProgressBar.Receiver" />
+    </FrameLayout>
+</RelativeLayout>

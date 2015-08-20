@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.PullWidgetListView android:id="@id/online_device_list" android:paddingTop="4.5dip" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="4.0dip" android:fastScrollEnabled="true" style="@style/NetDisk.ListView" />
+    <TextView android:gravity="center" android:id="@id/bottom_tips" android:background="@color/blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="29.0dip" android:text="@string/pick_netdisk_activity_desc" android:layout_alignParentBottom="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+</RelativeLayout>

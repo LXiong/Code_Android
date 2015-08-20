@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" style="@style/ChooseAppDialogStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/upload_file_popup_bg" android:layout_width="280.0dip" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/txt_confirmdialog_title" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginLeft="13.0dip" android:text="@string/delete_file_dialog_title" style="@style/NetDisk.TextAppearance.SuperLarge.Black" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/totalLayout" android:background="#fff8f8f8" android:layout_width="280.0dip" android:layout_height="wrap_content" android:minHeight="80.0dip">
+        <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/list_content" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" style="@style/NetDisk.ListView" />
+    </LinearLayout>
+</LinearLayout>

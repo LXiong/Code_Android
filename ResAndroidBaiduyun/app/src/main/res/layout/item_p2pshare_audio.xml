@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_white_gray_background" android:layout_width="fill_parent" android:layout_height="69.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_cover" android:src="@drawable/icon_list_audiofile" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <TextView android:ellipsize="middle" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="35.0dip" android:singleLine="true" android:layout_toRightOf="@id/iv_cover" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <TextView android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_name" android:layout_alignLeft="@id/tv_name" />
+    <ImageView android:id="@id/iv_selector" android:background="@drawable/imageview_select_circle_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

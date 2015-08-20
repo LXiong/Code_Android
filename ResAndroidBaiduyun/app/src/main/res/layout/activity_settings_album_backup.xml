@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <include layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/album_setting_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/album_setting_backup_show" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/album_sync_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/backup_photo_check" netdisk:item_title="@string/photo" netdisk:show_checkbox="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Top" />
+                <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/backup_video_check" netdisk:item_title="@string/video" netdisk:show_checkbox="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Bottom" />
+            </LinearLayout>
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/album_select_folder" netdisk:item_title="@string/album_select_album_folder" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Bottom" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/album_backup_wifi_backup" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:background="@color/blue_black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/album_manage" android:drawableLeft="@drawable/album_manage" android:drawablePadding="@dimen/set_item_icon_title_padding" style="@style/NetDisk.TextAppearance.Smaller.White" />
+    </LinearLayout>
+</LinearLayout>

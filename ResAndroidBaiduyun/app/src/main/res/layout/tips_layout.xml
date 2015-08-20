@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center" android:id="@id/tip_layout" android:background="@drawable/tips_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip" style="@style/NetDisk.TextAppearance.Small.White"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.netdisk.ui.widget.CheckableItemLayout android:id="@id/item_box" style="@style/NetDisk.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.GroupImageView android:id="@id/icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.IconUnreadNumber" />
+    <TextView android:ellipsize="end" android:id="@id/share_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_alignBottom="@id/title" android:layout_alignParentRight="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    <TextView android:ellipsize="end" android:id="@id/title" android:paddingTop="@dimen/item_content_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/share_date" android:layout_toRightOf="@id/icon" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/icon" android:layout_below="@id/title" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/share_status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/draft_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/draft_message" android:singleLine="true" style="@style/NetDisk.TextAppearance.Smaller.Red" />
+        <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    </LinearLayout>
+</com.baidu.netdisk.ui.widget.CheckableItemLayout>

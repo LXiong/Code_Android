@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:roundProgress="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <com.baidu.netdisk.personalpage.ui.widget.PullDownHeaderListView android:id="@id/layout_homepage_pulldown_feed_list" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="4.0dip" android:fastScrollEnabled="true" style="@style/NetDisk.ListView" />
+    <com.baidu.netdisk.ui.widget.EmptyView android:orientation="vertical" android:id="@id/empty_view" android:paddingTop="200.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/personalpage_empty"
+      xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    <TextView android:gravity="center" android:id="@id/textview_loading" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/list_loading_label" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+    <com.baidu.netdisk.personalpage.ui.widget.PullDownCircleProgressBar android:id="@id/progress_homepage_pulldown_circle" android:background="@drawable/refresh_progress_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" roundProgress:max="100" roundProgress:fill="false" roundProgress:Paint_Width="4" roundProgress:Paint_Color="0xffffffff" roundProgress:Inside_Interval="6" />
+    <com.baidu.netdisk.ui.widget.RotateImageView android:id="@id/header_homepage_rotate_image_refreshing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/refresh_progress_rotate_image" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <include layout="@layout/tips_layout" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/devices_search_radar_layout" android:background="@color/blue_black" android:layout_width="fill_parent" android:layout_height="146.0dip">
+        <com.baidu.netdisk.cloudp2p.ui.DLNASearchView android:id="@id/dlna_radar_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:text="@string/dlna_device_searching" style="@style/NetDisk.TextAppearance.Smaller.White" />
+    </LinearLayout>
+    <com.baidu.netdisk.ui.widget.PullWidgetListView android:id="@id/dlna_device_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/NetDisk.ListView" />
+</LinearLayout>

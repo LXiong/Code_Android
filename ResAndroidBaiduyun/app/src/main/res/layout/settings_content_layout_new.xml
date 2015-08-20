@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <LinearLayout android:orientation="vertical" android:paddingTop="4.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/wifi_only_setting" android:clickable="false" netdisk:item_icon="@drawable/icon_wifi_setting" netdisk:item_title="@string/upload_download_upon_wifi" netdisk:show_checkbox="true" style="@style/NetDisk.SettingItem.Single" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/message_setting" netdisk:item_icon="@drawable/icon_message_notic_setting" netdisk:item_title="@string/message_setting" netdisk:show_guide_arrow="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Top" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/p2pshare_setting" netdisk:item_icon="@drawable/icon_p2pshare_setting" netdisk:item_title="@string/settings_p2p_share" netdisk:show_guide_arrow="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Middle" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/privacy_setting" netdisk:item_icon="@drawable/icon_privacy_setting" netdisk:item_title="@string/privacy_setting" netdisk:show_guide_arrow="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Middle" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/advanced_setting" netdisk:item_icon="@drawable/icon_advanced_setting" netdisk:item_title="@string/settings_advanced" netdisk:show_guide_arrow="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Bottom" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/netdisk_version" netdisk:item_icon="@drawable/icon_checkversion" netdisk:item_title="@string/check_version_text" netdisk:show_guide_arrow="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Top" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/default_dir_setting" netdisk:item_icon="@drawable/icon_default_path_setting" netdisk:item_title="@string/settings_download_default_dir" netdisk:show_guide_arrow="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Middle" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView netdisk:item_icon="@drawable/icon_about_setting" netdisk:item_title="@string/settings_ablout_netdisk" netdisk:entry_class="com.baidu.netdisk.ui.AboutActivity" netdisk:show_guide_arrow="true" style="@style/NetDisk.SettingItem.Bottom" />
+    </LinearLayout>
+</ScrollView>

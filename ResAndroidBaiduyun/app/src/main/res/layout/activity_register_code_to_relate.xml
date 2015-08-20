@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/activate_register_code_title" layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/activate_register_code_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip">
+            <EditText android:textColorHint="@color/gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/register_code_text" android:background="@drawable/main_list_header_edittext_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" android:hint="@string/input_register_code_hint" android:dropDownSelector="@android:color/transparent" android:imeOptions="normal|actionUnspecified" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+            <Button android:enabled="false" android:textColor="@color/white_to_semitransparent" android:id="@id/activate_register_code_btn" android:background="@drawable/button_blue_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/activate_register_code" style="@style/NetDisk.TextAppearance.Middle.Black" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/register_code_tip_title" android:textAlignment="center" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_code_tip_content" android:textAlignment="center" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

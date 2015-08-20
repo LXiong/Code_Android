@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/sharefile_bottom_actionbar" android:visibility="visible" style="@style/NetDisk.ToolBar.WithIconButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_save" android:text="@string/personalpage_datail_footer_button_conserve" android:drawableTop="@drawable/edit_tools_save_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <Button android:id="@id/btn_to_download" android:text="@string/quick_action_download" android:drawableTop="@drawable/edit_tools_download_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/loading" android:background="@drawable/toolbar_background" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cloudp2p_sharefile_detail_loading" style="@style/NetDisk.TextAppearance.Middle.White" />
+</LinearLayout>

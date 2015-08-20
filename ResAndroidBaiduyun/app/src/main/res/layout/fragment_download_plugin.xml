@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/wap2netdiskBottomStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_welcome" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:id="@id/tv_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Large.White" />
+        <Button android:textColor="@color/white_to_semitransparent" android:id="@id/btn_install" android:background="@drawable/button_blue_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Large.Black" />
+    </LinearLayout>
+    <include layout="@layout/loading_text_box" />
+</FrameLayout>

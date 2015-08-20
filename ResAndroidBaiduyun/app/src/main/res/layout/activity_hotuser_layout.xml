@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="71.0dip" android:layout_height="fill_parent">
+                <ListView android:id="@id/hot_user_category" android:background="@color/white" android:fadingEdge="vertical" android:layout_width="71.0dip" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:requiresFadingEdge="vertical" />
+                <ImageView android:background="@drawable/hot_user_category_more" android:layout_width="71.0dip" android:layout_height="6.0dip" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/hot_user_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/personalpage_follow_empty"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/first_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_centerHorizontal="true" layout="@layout/wifi_scanner_device_receiver_item" />
+    <include android:id="@id/second_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.0dip" android:layout_marginRight="42.0dip" android:layout_toLeftOf="@id/first_receiver" layout="@layout/wifi_scanner_device_receiver_item" />
+    <include android:id="@id/third_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_toRightOf="@id/first_receiver" android:layout_alignTop="@id/second_receiver" layout="@layout/wifi_scanner_device_receiver_item" />
+</RelativeLayout>

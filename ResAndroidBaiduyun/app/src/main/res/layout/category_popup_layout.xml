@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/black_60p_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.IcsLinearLayout android:orientation="vertical" android:id="@id/content_view" android:background="@color/blue_black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baidu.netdisk.ui.widget.IcsLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.baidu.netdisk.ui.widget.SquareRelativeLayout android:id="@id/item1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/type_pic" android:drawableTop="@drawable/popup_category_image" android:drawablePadding="7.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+            </com.baidu.netdisk.ui.widget.SquareRelativeLayout>
+            <com.baidu.netdisk.ui.widget.SquareRelativeLayout android:id="@id/item2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/type_document" android:drawableTop="@drawable/popup_category_document" android:drawablePadding="7.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+            </com.baidu.netdisk.ui.widget.SquareRelativeLayout>
+            <com.baidu.netdisk.ui.widget.SquareRelativeLayout android:id="@id/item3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/type_video" android:drawableTop="@drawable/popup_category_video" android:drawablePadding="7.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+            </com.baidu.netdisk.ui.widget.SquareRelativeLayout>
+            <com.baidu.netdisk.ui.widget.SquareRelativeLayout android:id="@id/item4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/type_bt" android:drawableTop="@drawable/popup_category_bt" android:drawablePadding="7.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+            </com.baidu.netdisk.ui.widget.SquareRelativeLayout>
+        </com.baidu.netdisk.ui.widget.IcsLinearLayout>
+        <com.baidu.netdisk.ui.widget.IcsLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.baidu.netdisk.ui.widget.SquareRelativeLayout android:id="@id/item5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/type_audio" android:drawableTop="@drawable/popup_category_audio" android:drawablePadding="7.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+            </com.baidu.netdisk.ui.widget.SquareRelativeLayout>
+            <com.baidu.netdisk.ui.widget.SquareRelativeLayout android:id="@id/item6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/type_app" android:drawableTop="@drawable/popup_category_app" android:drawablePadding="7.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+            </com.baidu.netdisk.ui.widget.SquareRelativeLayout>
+            <com.baidu.netdisk.ui.widget.SquareRelativeLayout android:id="@id/item7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/type_other" android:drawableTop="@drawable/popup_category_other" android:drawablePadding="7.0dip" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+            </com.baidu.netdisk.ui.widget.SquareRelativeLayout>
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </com.baidu.netdisk.ui.widget.IcsLinearLayout>
+    </com.baidu.netdisk.ui.widget.IcsLinearLayout>
+</LinearLayout>

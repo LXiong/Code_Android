@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:background="@drawable/agreement_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textColor="@color/white_to_semitransparent" android:id="@id/agreement_button" android:background="@drawable/button_blue_selector" android:layout_width="240.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/about_button_magin_bottom" android:text="@string/settings_agreement" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="center" android:id="@id/user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/about_text_magin_bottom" android:layout_above="@id/agreement_button" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Small.Black" />
+        <TextView android:id="@id/version_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/user_id" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    </RelativeLayout>
+</LinearLayout>

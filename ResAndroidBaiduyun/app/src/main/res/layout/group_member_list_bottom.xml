@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/group_member_list_bottom_layout" style="@style/NetDisk.ToolBar.WithNormalButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/confirm_button" android:background="@drawable/button_blue_selector" android:text="@string/ok" style="@style/NetDisk.ToolBar.Button.Normal.Long" />
+</LinearLayout>

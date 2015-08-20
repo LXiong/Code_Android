@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/quickly_send_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="75.0dip" android:layout_height="wrap_content" android:text="@string/quick_send_popup_title" android:singleLine="false" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    <ImageView android:id="@id/image_to_send" android:layout_width="75.0dip" android:layout_height="75.0dip" android:scaleType="centerCrop" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/NetDisk.QuickSettings.Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/introImageView" android:src="@drawable/quick_settings_album" style="@style/NetDisk.QuickSettings.ItemIcon" />
+    <TextView android:id="@id/title" android:layout_toLeftOf="@id/checkBox" android:layout_toRightOf="@id/introImageView" style="@style/NetDisk.QuickSettings.ItemTitle" />
+    <TextView android:id="@id/introInfo" android:layout_toLeftOf="@id/checkBox" android:layout_toRightOf="@id/introImageView" android:layout_below="@id/title" style="@style/NetDisk.QuickSettings.ItemDesc" />
+    <CheckBox android:id="@id/checkBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/quick_settings_item_toggle_margin_left" android:layout_marginRight="@dimen/quick_settings_item_toggle_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CheckboxStyle" />
+</RelativeLayout>

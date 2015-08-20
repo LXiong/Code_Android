@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.widget.ZoomImageView android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <RelativeLayout android:id="@id/image_title_layout" android:background="@drawable/personal_home_image_preview_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/imagepager_title_layout_heigth">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/image_title_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/titlebar_back_button_selector" android:layout_alignParentLeft="true" />
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/image_title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/imagepager_title_paddind" android:maxWidth="200.0dip" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" style="@style/NetDisk.TextAppearance.Large.White" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layout_footer_operation" android:layout_alignParentBottom="true" style="@style/NetDisk.ToolBar.WithNormalButton">
+        <Button android:id="@id/share_btn" android:background="@drawable/button_blue_selector" android:text="@string/imagepager_bt_share" style="@style/NetDisk.ToolBar.Button.Normal.Long" />
+    </LinearLayout>
+</RelativeLayout>

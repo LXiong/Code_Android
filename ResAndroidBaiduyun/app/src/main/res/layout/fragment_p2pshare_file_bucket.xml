@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/activity_view_bg" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ExpandableListView android:id="@id/bucket_list_view" android:fastScrollEnabled="false" style="@style/NetDisk.ExpandableListView" />
+    <com.baidu.netdisk.ui.widget.EmptyView android:layout_gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/this_folder_is_empty"
+      xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+</FrameLayout>

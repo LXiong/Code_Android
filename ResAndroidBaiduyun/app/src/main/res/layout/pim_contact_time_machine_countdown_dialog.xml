@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pim_contact_time_machine_clock" />
+    <ImageView android:id="@id/imageview_clock_hour_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pim_contact_time_machine_clock_hour_hand" />
+    <ImageView android:id="@id/imageview_clock_minute_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pim_contact_time_machine_clock_minute_hand" />
+    <TextView android:id="@id/textview_clock_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/imageview_clock_hour_hand" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.SuperLarge.White" />
+    <TextView android:id="@id/textview_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/contact_time_machine_countdown_tips" android:layout_below="@id/textview_clock_second" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Small.White" />
+</RelativeLayout>

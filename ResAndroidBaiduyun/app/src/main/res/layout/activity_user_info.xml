@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar_layout" layout="@layout/my_netdisk_app_title" />
+    <ImageView android:id="@id/avatar_image" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="17.0dip" android:src="@drawable/default_user_head_icon" android:scaleType="centerCrop" android:layout_below="@id/titlebar_layout" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="17.0dip" android:layout_toRightOf="@id/avatar_image" android:layout_below="@id/titlebar_layout">
+        <LinearLayout android:orientation="horizontal" android:id="@id/remark_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/blue_black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/remark_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <Button android:textSize="12.0dip" android:textColor="@color/blue_black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/change_name_button" android:background="@drawable/button_write_selector" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textColor="@color/dark_gray" android:ellipsize="end" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" android:layout_below="@id/remark_layout" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/dark_gray" android:ellipsize="end" android:id="@id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" android:layout_below="@id/nick_name" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/avatar_image">
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/add_friends_button" android:background="@drawable/button_green_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="17.0dip" android:text="@string/add_friends_button_text" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white_to_semitransparent" android:id="@id/send_file_button" android:background="@drawable/button_blue_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="17.0dip" android:text="@string/sendfile_tofriends_button_text" />
+        <Button android:textSize="16.0dip" android:textColor="@color/white_to_semitransparent" android:id="@id/chage_headimage_button" android:background="@drawable/button_blue_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/chage_headimage_button_text" />
+    </LinearLayout>
+</RelativeLayout>

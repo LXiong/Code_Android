@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/data_notfinish_empty_layout" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.EmptyView android:orientation="vertical" android:id="@id/data_notfinish_empty_view" android:background="@color/activity_view_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/timeline_get_cloudimage_status_result_notready"
+      xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+</RelativeLayout>

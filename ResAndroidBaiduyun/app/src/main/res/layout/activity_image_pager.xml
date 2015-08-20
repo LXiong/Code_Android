@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/light_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.ImageViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/loading_image" android:background="@color/light_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/NetDisk.ProgressBar.Medium" />
+    </RelativeLayout>
+    <ImageView android:id="@id/error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/imagepage_title_layout" android:background="@drawable/personal_home_image_preview_title_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/imagepager_title_layout_heigth">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_left_label_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/image_title_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/titlebar_back_button_selector" />
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/imagepage_title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/imagepager_title_paddind" android:maxWidth="200.0dip" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" style="@style/NetDisk.TextAppearance.Large.White" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/image_tools_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:layout_above="@id/frame_footer_operation_bar" />
+    <TextView android:id="@id/image_tools_area_welcome" android:background="@drawable/image_tools_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:layout_above="@id/frame_footer_operation_bar" style="@style/NetDisk.TextAppearance.Middle.White" />
+    <FrameLayout android:id="@id/frame_footer_operation_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/main_tab_background_height" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/layout_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

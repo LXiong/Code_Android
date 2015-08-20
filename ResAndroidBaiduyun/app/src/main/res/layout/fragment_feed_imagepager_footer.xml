@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_footer_operation" android:background="@drawable/personal_home_image_preview_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/main_tab_background_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center" android:id="@id/layout_save" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/personalpage_datail_footer_button_conserve" android:drawableTop="@drawable/edit_tools_save_btn" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Smaller.Blue2White" />
+    <Button android:gravity="center" android:id="@id/layout_download" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/imagepager_bt_download" android:drawableTop="@drawable/edit_tools_download_btn" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Smaller.Blue2White" />
+</LinearLayout>

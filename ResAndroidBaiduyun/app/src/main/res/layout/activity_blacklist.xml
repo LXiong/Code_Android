@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.ui.widget.PullWidgetListView android:id="@id/blacklist" android:listSelector="@android:color/transparent" android:fastScrollEnabled="true" style="@style/NetDisk.ListView" />
+    </RelativeLayout>
+    <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/blacklist_no_data"
+      xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+</LinearLayout>

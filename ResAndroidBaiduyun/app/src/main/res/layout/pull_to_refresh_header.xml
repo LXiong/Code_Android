@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pull_to_refresh_head_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:roundProgress="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.baidu.netdisk.ui.widget.RotateImageView android:layout_gravity="center_vertical" android:id="@id/pull_to_refresh_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/refresh_progress_rotate_image" />
+        <com.baidu.netdisk.personalpage.ui.widget.PullDownCircleProgressBar android:layout_gravity="center_vertical" android:id="@id/progress_pulldown_circle" android:background="@drawable/refresh_progress_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" roundProgress:max="100" roundProgress:fill="false" roundProgress:Paint_Width="4" roundProgress:Paint_Color="0xffffffff" roundProgress:Inside_Interval="6" />
+        <LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/pull_to_refresh_head_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:gravity="center" android:id="@id/pull_to_refresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_to_refresh_pull_label" style="@style/NetDisk.TextAppearance.Middle.Black" />
+            <TextView android:id="@id/pull_to_refresh_updated_at" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" style="@style/NetDisk.TextAppearance.Least.Gray" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tag_layout" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/share_tag_path_layout" layout="@layout/share_tag_path" />
+    <RelativeLayout android:id="@id/layout_emptyview" android:background="@color/activity_view_bg" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.ui.widget.PullWidgetListView android:id="@id/tag_share_list" android:listSelector="@android:color/transparent" style="@style/NetDisk.ListView" />
+        <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="horizontal" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/inbox_list_empty"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/select_tag_path_view" />
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/tag_bottom_bar" />
+    </RelativeLayout>
+</LinearLayout>

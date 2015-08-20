@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="69.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_marginLeft="30.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/icon_list_unknown" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <TextView android:ellipsize="middle" android:id="@id/filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="49.0dip" android:singleLine="true" android:layout_toRightOf="@id/icon" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <TextView android:id="@id/filesize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_toRightOf="@id/icon" android:layout_alignLeft="@id/filename" android:layout_alignBottom="@id/icon" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    <CheckBox android:gravity="center" android:id="@id/checkbox" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" style="@style/EditCheckboxStyle" />
+</RelativeLayout>

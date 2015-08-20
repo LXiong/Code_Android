@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/NetDisk.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contact_status_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:textColor="@color/white_to_semitransparent" android:layout_gravity="center_vertical" android:id="@id/add_follow_btn" android:background="@drawable/button_blue_selector" android:focusable="false" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="@string/contact_add_follow_title" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/invite_btn" android:background="@drawable/button_green_selector" android:focusable="false" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="@string/contact_invite_title" style="@style/NetDisk.TextAppearance.Smaller.White" />
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/follow_status_text" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="@string/contact_is_follow_title" android:singleLine="true" style="@style/NetDisk.TextAppearance.Smaller.Green" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/contact_name_root_view" android:paddingTop="@dimen/item_content_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="11.0dip" android:layout_toLeftOf="@id/contact_status_layout">
+        <TextView android:layout_gravity="bottom" android:id="@id/contact_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="姓名" style="@style/NetDisk.TextAppearance.Middle.Black" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/baiduyun_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/baiduyun_icon" />
+    </LinearLayout>
+    <TextView android:id="@id/contact_phone_text" android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13800138000" android:maxLines="1" android:layout_alignLeft="@id/contact_name_root_view" android:layout_alignRight="@id/contact_name_root_view" android:layout_alignParentBottom="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+</RelativeLayout>

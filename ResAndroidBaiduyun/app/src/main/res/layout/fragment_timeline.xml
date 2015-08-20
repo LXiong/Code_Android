@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/cloudimage_location_view" android:background="@color/light_gray" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:id="@id/cloudimage_location_image_count" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        <TextView android:gravity="center_vertical" android:id="@id/cloudimage_location_detail" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:minHeight="30.0dip" android:layout_toLeftOf="@id/cloudimage_location_image_count" android:layout_alignParentLeft="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.ui.widget.PinnedHeaderGridItemListView android:id="@id/timeline_listView" android:listSelector="@android:color/transparent" android:divider="@null" android:fastScrollEnabled="true" baidu:columnWidth="@dimen/photo_gridview_item_width" baidu:sideWidth="85.0dip" style="@style/NetDisk.ListView"
+          xmlns:baidu="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+        <TextView android:gravity="center" android:id="@id/timeline_diffing_tip" android:background="@color/blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="29.0dip" android:text="@string/cloudimage_timeline_diffing" android:layout_alignBottom="@id/timeline_listView" style="@style/NetDisk.TextAppearance.Smaller.White" />
+        <include layout="@layout/tips_layout" />
+        <ScrollView android:id="@id/empty_scroll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/empty_view" android:layout_width="wrap_content" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/folder_empty"
+              xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+        </ScrollView>
+        <RelativeLayout android:id="@id/empty_view_not_open_album_backup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/emptyview_notopen_backup" android:background="@color/activity_view_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/cloudimage_timeline_no_data" netdisk:button_background="@drawable/button_blue_selector" netdisk:button_text_color="@color/white" netdisk:button_text="@string/cloudimage_timeline_open_album_backup"
+              xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+        </RelativeLayout>
+        <ViewStub android:id="@id/imagedata_notready_viewstub" android:layout="@layout/cloud_image_notfinish_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/guid_view" android:layout="@layout/timeline_guid_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_marginTop="24.0dip" />
+    </RelativeLayout>
+    <include android:layout_gravity="bottom" android:visibility="gone" layout="@layout/my_netdisk_bottom_bar" />
+</LinearLayout>

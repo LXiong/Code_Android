@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:padding="@dimen/numeric_editetext_bg_padding" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/numeric_frist" android:layout_marginRight="@dimen/numeric_editetext_padding" style="@style/CodedLockEditTextStyle" />
+    <TextView android:id="@id/numeric_second" android:background="@drawable/coded_lock_text_background" android:layout_marginRight="@dimen/numeric_editetext_padding" style="@style/CodedLockEditTextStyle" />
+    <TextView android:id="@id/numeric_third" android:background="@drawable/coded_lock_text_background" android:layout_marginRight="@dimen/numeric_editetext_padding" style="@style/CodedLockEditTextStyle" />
+    <TextView android:id="@id/numeric_fourth" style="@style/CodedLockEditTextStyle" />
+</LinearLayout>

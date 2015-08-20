@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/text_check_layout" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height_huge"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/list_item_text" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_download_upon_wifi" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Middle.BlackWhiteReverse" />
+    <ImageButton android:id="@id/list_item_controller" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/data_line_up_zero" android:background="@drawable/background_settings_sub_head" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/data_line_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2pshare_dataline_icon_top" android:src="@drawable/p2pshare_dataline_detection_head" />
+                <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2pshare_dataline_introduction_top" android:layout_marginBottom="@dimen/p2pshare_dataline_introduction_bottom" android:text="@string/p2pshare_dataline_introduction" style="@style/NetDisk.TextAppearance.Small.White" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2pshare_dataline_info_top" android:text="@string/p2pshare_dataline_first_info" style="@style/NetDisk.TextAppearance.Large.Blue" />
+                <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2pshare_dataline_explain_top" android:text="@string/p2pshare_dataline_explain_1" style="@style/NetDisk.TextAppearance.Small.DarkGray" />
+                <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2pshare_dataline_support_info_top" android:text="@string/p2pshare_dataline_support_info" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/line" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginTop="@dimen/p2pshare_dataline_line_top" android:src="@drawable/line_division" />
+                <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2pshare_dataline_info_top" android:text="@string/p2pshare_dataline_second_info" style="@style/NetDisk.TextAppearance.Large.Blue" />
+                <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2pshare_dataline_explain_top" android:text="@string/p2pshare_dataline_explain_2" style="@style/NetDisk.TextAppearance.Small.DarkGray" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/detection_pc_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/p2pshare_dataline_button_margin" android:text="@string/p2pshare_dataline_detection_pc" style="@style/NetDisk.Button.BackupOperationalBlue" />
+</LinearLayout>

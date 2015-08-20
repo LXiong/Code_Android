@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <CheckBox android:textAppearance="@style/NetDisk.TextAppearance.Large.White" android:textColor="@color/blue" android:id="@id/autu_sync_address" android:paddingLeft="25.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkbox_magin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/UserGuidCheckboxStyle" />
+    <TextView android:textAppearance="@style/NetDisk.TextAppearance.Large.White" android:textColor="@color/blue" android:id="@id/btn" android:paddingLeft="25.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkbox_magin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/NetDisk.TextAppearance.Large.Black" android:textColor="@color/white_to_semitransparent" android:gravity="center" android:id="@id/bottom_btn" android:background="@drawable/button_blue_selector" android:layout_width="200.0dip" android:layout_height="42.0dip" android:layout_marginBottom="45.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageButton android:id="@id/close_btn" android:background="@drawable/user_guide_close_btn_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

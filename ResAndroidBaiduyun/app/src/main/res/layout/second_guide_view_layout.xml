@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/layout_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:src="@drawable/second_guide_text" android:layout_above="@id/layout_parent" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/layout_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/gray_ball" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/second_guide_background" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/layout_parent_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/second_guide_transparent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/second_guide_no_transparent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginBottom="-30.0dip" android:src="@drawable/second_guide_people" android:layout_alignLeft="@id/layout_parent" android:layout_alignBottom="@id/layout_parent" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:paddingBottom="3.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_even_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_even_2" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </TableRow>
+    <TableRow android:layout_weight="1.0">
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_even_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_even_4" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </TableRow>
+</TableLayout>

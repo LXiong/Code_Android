@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/root_top_title_layout" layout="@layout/my_netdisk_app_title" />
+    <ImageView android:id="@id/iv_main_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/ic_authenticator_logo" android:layout_below="@id/root_top_title_layout" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/tv_sub_head_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_below="@id/iv_main_icon" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <TextView android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="26.0dip" android:singleLine="true" android:layout_below="@id/tv_sub_head_info" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:listSelector="@android:color/transparent" android:layout_below="@id/tv_tips" style="@style/NetDisk.ListView" />
+    <FrameLayout android:background="@drawable/button_blue_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="53.0dip" android:layout_below="@id/list" android:layout_centerHorizontal="true">
+        <Button android:id="@id/btn_ok" android:background="@drawable/button_blue_selector" android:text="@string/authenticator_ok" style="@style/NetDisk.ToolBar.Button.Normal.Long" />
+        <com.baidu.netdisk.ui.widget.RotateImageView android:layout_gravity="center" android:id="@id/riv_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh_progress_rotate_image" />
+    </FrameLayout>
+</RelativeLayout>

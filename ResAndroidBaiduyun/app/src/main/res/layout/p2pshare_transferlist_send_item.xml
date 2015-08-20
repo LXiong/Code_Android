@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/transfer_recorder_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/user_icon" android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/default_user_head_icon" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+        <TextView android:id="@id/user_icon_right_margin" android:layout_width="5.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/user_icon" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="7.0dip" android:layout_toLeftOf="@id/right_layout" android:layout_alignParentLeft="true">
+        <RelativeLayout android:id="@id/transfer_info" android:background="@drawable/p2pshare_transferlist_send_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/transfer_task_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/transfer_task_text" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+            <TextView android:ellipsize="middle" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:singleLine="true" android:layout_toRightOf="@id/transfer_task_text" android:layout_alignTop="@id/transfer_task_text" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+            <ImageView android:id="@id/icon" android:paddingTop="8.0dip" android:paddingBottom="9.0dip" android:layout_marginTop="3.0dip" android:layout_below="@id/username" android:layout_alignLeft="@id/transfer_task_text" android:layout_alignParentLeft="true" style="@style/NetDisk.ListViewItem.Icon" />
+            <TextView android:ellipsize="middle" android:id="@id/filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/icon" android:layout_below="@id/username" style="@style/NetDisk.TextAppearance.Middle.Black" />
+            <TextView android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/filename" android:layout_alignLeft="@id/filename" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+            <TextView android:gravity="center|right" android:id="@id/speed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/progress" android:layout_alignTop="@id/progress" android:layout_alignParentRight="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/progress_horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/NetDisk.ProgressBar.Transfer" />
+    </FrameLayout>
+</RelativeLayout>

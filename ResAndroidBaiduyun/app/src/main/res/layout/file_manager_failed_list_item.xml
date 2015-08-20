@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/checkable_layout" android:descendantFocusability="blocksDescendants" style="@style/NetDisk.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/src_fileicon" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <TextView android:ellipsize="middle" android:id="@id/src_filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文件名" android:singleLine="true" android:layout_toRightOf="@id/src_fileicon" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+</RelativeLayout>

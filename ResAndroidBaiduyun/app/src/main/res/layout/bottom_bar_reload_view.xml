@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_reload" android:background="@drawable/toolbar_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/NetDisk.TextAppearance.Smaller.White" android:id="@id/reload_text" android:paddingTop="@dimen/toolbar_with_normal_button_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/batchtransfer_status_get_failed" />
+    <LinearLayout android:gravity="center" style="@style/NetDisk.ToolBar.WithNormalButton">
+        <Button android:layout_gravity="center" android:id="@id/button_reload_ok" android:background="@drawable/button_blue_selector" android:text="@string/batchtransfer_status_reload" style="@style/NetDisk.ToolBar.Button.Normal.Long" />
+    </LinearLayout>
+</LinearLayout>

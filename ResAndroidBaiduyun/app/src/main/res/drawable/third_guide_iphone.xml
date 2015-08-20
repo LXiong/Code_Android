@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/third_guide_iphone6_image_01" />
+    <item android:duration="200" android:drawable="@drawable/third_guide_iphone6_image_02" />
+    <item android:duration="200" android:drawable="@drawable/third_guide_iphone6_image_03" />
+    <item android:duration="200" android:drawable="@drawable/third_guide_iphone6_image_04" />
+    <item android:duration="200" android:drawable="@drawable/third_guide_iphone6_image_05" />
+    <item android:duration="200" android:drawable="@drawable/third_guide_iphone6_image_06" />
+    <item android:duration="200" android:drawable="@drawable/third_guide_iphone6_image_07" />
+    <item android:duration="200" android:drawable="@drawable/third_guide_iphone6_image_08" />
+</animation-list>

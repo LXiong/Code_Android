@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wideo_widget_title_bg" android:background="@drawable/video_widget_tile_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:background="@drawable/video_widget_tile_bg_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/icon_and_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/wideo_widget_title_bg">
+        <ImageView android:background="@drawable/quick_settings_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" />
+        <TextView android:textSize="16.0dip" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_widget_title" style="@style/NetDisk.TextAppearance.Larger.Black" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/filelist_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_below="@id/icon_and_name" />
+</RelativeLayout>

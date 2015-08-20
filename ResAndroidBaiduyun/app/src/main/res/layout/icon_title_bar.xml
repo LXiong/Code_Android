@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/title_bar" android:background="@drawable/title_bar_background_netdisk" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_left_label_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/icon_vertical_line" android:visibility="visible" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/titlebar_back_button_selector" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_logo" android:visibility="visible" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/baidu_logo" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NetDisk.AppTitleBar" />
+        </LinearLayout>
+        <Button android:gravity="center" android:id="@id/title_btn_right" android:background="@drawable/titlebar_edit_mode_button_selector" android:layout_width="48.0dip" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Middle.White" />
+    </RelativeLayout>
+</LinearLayout>

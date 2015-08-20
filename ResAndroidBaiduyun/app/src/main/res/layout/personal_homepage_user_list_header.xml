@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.netdisk.personalpage.ui.widget.PullDownPersonalHomeHeaderView android:orientation="vertical" android:background="@drawable/title_bar_background_netdisk" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/personalpage_info_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/personal_homepage_title_info_margin_top" android:minHeight="@dimen/personal_homepage_title_info_height">
+            <RelativeLayout android:id="@id/button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <Button android:id="@id/button_follow" android:background="@drawable/personal_homepage_user_attention_selector" android:visibility="gone" android:layout_width="59.0dip" android:layout_height="34.0dip" android:text="@string/personalpage_datail_button_attention" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/button_followed" android:background="@drawable/personal_home_follow_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <Button android:id="@id/button_follow_state" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:layout_width="74.0dip" android:layout_height="34.0dip" android:drawableLeft="@drawable/personal_home_follow_each_other" style="@style/NetDisk.TextAppearance.Smaller.White" />
+                    <ImageView android:background="@drawable/personal_home_follow_line" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <Button android:id="@id/button_cancel" android:background="@drawable/personal_homepage_user_cancel_follow_selector" android:layout_width="49.0dip" android:layout_height="34.0dip" android:text="@string/personalpage_datail_button_follow_cancle" style="@style/NetDisk.TextAppearance.Smaller.White" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/button_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:ellipsize="end" android:id="@id/personalpage_datail_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/NetDisk.TextAppearance.AmazingLarge.White" />
+                <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/layout_other_share_count" android:background="@drawable/personal_homepage_header_selector" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:gravity="center" android:id="@id/personalpage_datail_other_account_share" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NetDisk.TextAppearance.Middle.White" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_homepage_hearder_other_share" style="@style/NetDisk.TextAppearance.Middle.White" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/personalpage_datail_layout" android:background="@color/white" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_user_share_count" android:background="@drawable/personal_homepage_header_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/personalpage_datail_user_account_share" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NetDisk.TextAppearance.Large.Blue" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/personal_homepage_hearder_share" style="@style/NetDisk.TextAppearance.Small.Gray" />
+            </LinearLayout>
+            <ImageView android:background="@drawable/personal_home_line" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_user_follow_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/personalpage_datail_user_account_follow" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NetDisk.TextAppearance.Large.Red" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/personal_homepage_hearder_follow" style="@style/NetDisk.TextAppearance.Small.Gray" />
+            </LinearLayout>
+            <ImageView android:background="@drawable/personal_home_line" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_user_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/personalpage_datail_user_account_fans" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NetDisk.TextAppearance.Large.Red" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/personal_homepage_hearder_fans" style="@style/NetDisk.TextAppearance.Small.Gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.baidu.netdisk.personalpage.ui.widget.PullDownPersonalHomeHeaderView>

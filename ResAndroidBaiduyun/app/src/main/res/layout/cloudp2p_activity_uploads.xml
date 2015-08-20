@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/mbox_detail_head_framelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <FrameLayout android:id="@id/mbox_detail_footer_framelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <FrameLayout android:id="@id/mbox_detail_content_framelayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/mbox_detail_footer_framelayout" android:layout_below="@id/mbox_detail_head_framelayout" />
+    </RelativeLayout>
+</LinearLayout>

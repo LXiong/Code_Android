@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/tag_bottom_actionbar" style="@style/NetDisk.ToolBar.WithIconButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_to_save" android:text="@string/tag_action_save" android:drawableTop="@drawable/edit_tools_save_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <Button android:id="@id/btn_to_rename" android:text="@string/tag_action_rename" android:drawableTop="@drawable/edit_tools_rename_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <Button android:id="@id/btn_to_move" android:text="@string/tag_action_move" android:drawableTop="@drawable/edit_tools_move_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <Button android:id="@id/btn_to_delete" android:text="@string/tag_action_delete" android:drawableTop="@drawable/edit_tools_delete_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+</LinearLayout>

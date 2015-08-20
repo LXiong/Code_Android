@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <LinearLayout android:orientation="vertical" android:paddingTop="4.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/setting_noimage_area" netdisk:item_icon="@drawable/icon_setting_no_image" netdisk:item_title="@string/setting_noimage" netdisk:show_checkbox="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Single" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/setting_full_filename" netdisk:item_icon="@drawable/icon_filename_setting" netdisk:item_title="@string/setting_full_filename" netdisk:show_checkbox="true" netdisk:key_checkbox="setting_full_filename" netdisk:key_checkbox_default_value="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Single" />
+        <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/setting_location_mark" netdisk:item_icon="@drawable/icon_location_mark_setting" netdisk:item_title="@string/settings_location_mark" netdisk:show_checkbox="true" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Single" />
+    </LinearLayout>
+</ScrollView>

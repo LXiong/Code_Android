@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:orientation="vertical"
+    tools:context="com.little.stockgeek.FragmentFour">
+
+
+
+    <com.little.stockgeek.SlidingTabLayout
+        android:id="@+id/tabBlock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+
+    <com.little.stockgeek.uilib.CustomViewPager
+        android:id="@+id/pagerBlock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabBlock"
+        />
+
+
+
+</LinearLayout>

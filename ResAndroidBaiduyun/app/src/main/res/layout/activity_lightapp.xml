@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/lightapp_info_framelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0dip" android:id="@id/lightapp_introduce_textview" android:layout_width="fill_parent" android:layout_height="@dimen/wideo_widget_introduction_height" android:layout_marginLeft="22.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="22.0dip" android:text="@string/lightapp_introduce" android:layout_below="@id/lightapp_info_framelayout" android:lineSpacingExtra="4.0dip" style="@style/NetDisk.TextAppearance.Larger.Black" />
+        <ImageView android:background="@drawable/filelist_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_above="@id/lightapp_down_load_framelayout" />
+        <FrameLayout android:gravity="center" android:id="@id/lightapp_down_load_framelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

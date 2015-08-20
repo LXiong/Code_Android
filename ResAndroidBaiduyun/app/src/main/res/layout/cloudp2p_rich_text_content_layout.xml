@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/rich_text_content" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_rich_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:maxWidth="200.0dip" android:singleLine="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <ImageView android:gravity="center" android:id="@id/iv_rich_text_thumb" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" android:layout_below="@id/tv_rich_text_title" />
+    <com.baidu.netdisk.ui.widget.EllipsizeTextView android:ellipsize="middle" android:id="@id/tv_rich_text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160.0dip" android:maxLines="3" android:layout_toRightOf="@id/iv_rich_text_thumb" android:layout_below="@id/tv_rich_text_title" android:lineSpacingExtra="3.0dip" style="@style/NetDisk.TextAppearance.Smaller.SemitransparentBlack" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <FrameLayout android:id="@id/framelayout_feed_folderlist_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@id/textview_loading" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/list_loading_label" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/framelayout_feed_folderlist_operate" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+</LinearLayout>

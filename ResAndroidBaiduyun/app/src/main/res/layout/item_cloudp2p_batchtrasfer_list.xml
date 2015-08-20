@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_height="wrap_content" style="@style/NetDisk.ListViewItem.Higher"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/head_icon" android:layout_marginTop="12.0dip" android:layout_alignParentLeft="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <com.baidu.netdisk.ui.widget.EllipsizeTextView android:ellipsize="middle" android:id="@id/file_name" android:paddingTop="@dimen/item_content_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="3" android:layout_toRightOf="@id/head_icon" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/file_size_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/head_icon" android:layout_below="@id/file_name">
+        <TextView android:id="@id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:singleLine="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        <TextView android:ellipsize="middle" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    </LinearLayout>
+    <TextView android:ellipsize="middle" android:id="@id/status" android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/batchtransfer_status_waiting" android:singleLine="true" android:layout_toRightOf="@id/head_icon" android:layout_below="@id/file_size_from" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+</RelativeLayout>

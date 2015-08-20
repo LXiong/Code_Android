@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.CustomViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottomBtnBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.baidu.netdisk.ui.widget.SingleClickButton android:textColor="@color/white" android:id="@id/registerBtn" android:background="@drawable/button_darkgray_selector" android:layout_width="144.0dip" android:layout_height="46.0dip" android:layout_marginRight="4.0dip" android:text="@string/regist" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Middle.Black" />
+        <com.baidu.netdisk.ui.widget.SingleClickButton android:textColor="@color/white_to_semitransparent" android:gravity="center" android:id="@id/loginBtn" android:background="@drawable/button_blue_selector" android:layout_width="144.0dip" android:layout_height="46.0dip" android:layout_marginLeft="4.0dip" android:text="@string/login" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    </LinearLayout>
+    <com.baidu.netdisk.ui.widget.PageIndexView android:orientation="horizontal" android:id="@id/pageIndexView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" android:layout_above="@id/bottomBtnBox" android:layout_centerHorizontal="true" />
+</RelativeLayout>

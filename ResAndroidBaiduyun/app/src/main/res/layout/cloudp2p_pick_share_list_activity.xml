@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:id="@id/create_conversation_layout" style="@style/NetDisk.ListViewItem">
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" android:text="@string/create_new_conversation" android:singleLine="true" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/icon_guide_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include android:id="@id/latest_msgs_bar_layout" layout="@layout/list_groupbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/share_listview" android:listSelector="@android:color/transparent" android:fastScrollEnabled="true" style="@style/NetDisk.ListView" />
+        <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/no_conversations_empty_text"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    </RelativeLayout>
+</LinearLayout>

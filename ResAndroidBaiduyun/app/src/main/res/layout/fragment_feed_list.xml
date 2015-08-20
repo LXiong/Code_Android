@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_feed_list_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.ui.widget.PullWidgetListView android:id="@id/layout_pulldown_feed_list" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="4.0dip" android:fastScrollEnabled="true" style="@style/NetDisk.ListView" />
+        <include layout="@layout/tips_layout" />
+    </RelativeLayout>
+    <ScrollView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/personalpage_network_inavailable"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    </ScrollView>
+    <ScrollView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_guide_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.baidu.netdisk.ui.widget.EmptyView android:layout_gravity="center" android:orientation="vertical" android:id="@id/guide_empty_view" android:background="@color/activity_view_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/personalpage_guide" netdisk:button_background="@drawable/feed_detail_item_personal_attention_selector" netdisk:button_text_color="@color/white" netdisk:button_text="@string/personalpage_guide_button"
+              xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

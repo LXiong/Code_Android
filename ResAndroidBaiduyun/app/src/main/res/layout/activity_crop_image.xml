@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.netdisk.ui.widget.CropImageView android:id="@id/crop_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/crop_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <View android:background="#80000000" android:layout_width="18.0dip" android:layout_height="fill_parent" />
+            <com.baidu.netdisk.ui.widget.SquareImageView android:id="@id/crop_rect" android:background="@drawable/crop_rect" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <View android:background="#80000000" android:layout_width="18.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:background="#ffff0000" android:layout_width="18.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/crop_layout" />
+        <View android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/crop_layout" />
+        <View android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/crop_layout" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/relative_layout" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/cancel_button" android:background="@drawable/button_darkgray_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:text="@string/cancel" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Middle.White" />
+        <Button android:textColor="@color/white_to_semitransparent" android:id="@id/save_button" android:background="@drawable/button_blue_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/save" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    </LinearLayout>
+</RelativeLayout>

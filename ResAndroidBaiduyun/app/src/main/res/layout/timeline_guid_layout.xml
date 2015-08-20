@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.netdisk.cloudimage.ui.timeline.TimelineGuideView android:id="@id/guide_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/circle_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_guid_circle1" />
+    <ImageView android:id="@id/hand_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="96.0dip" android:layout_marginTop="76.0dip" android:src="@drawable/timeline_guide_hand" />
+</com.baidu.netdisk.cloudimage.ui.timeline.TimelineGuideView>

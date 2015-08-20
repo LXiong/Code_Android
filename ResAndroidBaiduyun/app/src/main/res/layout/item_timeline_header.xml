@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cluster_layout" android:background="@color/activity_view_bg" android:layout_width="@dimen/cloudimage_item_timeline_header_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_timeline_header_divider" android:layout_width="@dimen/cloudimage_item_timeline_header_width" android:layout_height="8.0dip">
+        <ImageView android:background="@drawable/timeline_axis" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginRight="13.0dip" android:layout_alignParentRight="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="@dimen/cloudimage_item_timeline_header_width" android:layout_height="@dimen/cloudimage_item_timeline_header_height" android:layout_below="@id/item_timeline_header_divider">
+        <RelativeLayout android:id="@id/cluster_day_layout" android:layout_width="@dimen/cloudimage_item_timeline_header_cluster_key_width" android:layout_height="@dimen/cloudimage_item_timeline_header_height">
+            <TextView android:gravity="bottom|center|right" android:id="@id/cluster_day_key_view" android:layout_width="37.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_cluster_key_height" style="@style/NetDisk.TextAppearance.Huge.Blue" />
+            <TextView android:gravity="bottom|center|left" android:id="@id/cluster_day_key_unit_view" android:paddingBottom="5.0dip" android:layout_width="28.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_cluster_key_height" android:text="@string/cloudimage_timeline_cluster_day" android:layout_toRightOf="@id/cluster_day_key_view" style="@style/NetDisk.TextAppearance.Small.Blue" />
+            <ImageView android:id="@id/cluster_day_divide_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_cluster_divide_line" android:layout_below="@id/cluster_day_key_view" android:layout_centerHorizontal="true" />
+            <TextView android:gravity="center|top" android:id="@id/cluster_day_condition_view" android:paddingTop="2.0dip" android:layout_width="@dimen/cloudimage_item_timeline_header_cluster_condition_width" android:layout_height="@dimen/cloudimage_item_timeline_header_cluster_condition_height" android:layout_below="@id/cluster_day_divide_line" style="@style/NetDisk.TextAppearance.Smaller.Blue" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cluster_month_layout" android:layout_width="65.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_height">
+            <TextView android:gravity="bottom|center|right" android:id="@id/cluster_month_key_view" android:layout_width="37.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_cluster_key_height" style="@style/NetDisk.TextAppearance.Huge.Blue" />
+            <TextView android:gravity="bottom|center|left" android:id="@id/cluster_month_key_unit_view" android:paddingBottom="5.0dip" android:layout_width="28.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_cluster_key_height" android:text="@string/cloudimage_timeline_cluster_month" android:layout_toRightOf="@id/cluster_month_key_view" style="@style/NetDisk.TextAppearance.Small.Blue" />
+            <ImageView android:id="@id/cluster_month_divide_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_cluster_divide_line" android:layout_below="@id/cluster_month_key_view" android:layout_centerHorizontal="true" />
+            <TextView android:gravity="center|top" android:id="@id/cluster_month_condition_view" android:paddingTop="2.0dip" android:layout_width="65.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_cluster_condition_height" android:layout_below="@id/cluster_month_divide_line" style="@style/NetDisk.TextAppearance.Smaller.Blue" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cluster_year_layout" android:layout_width="65.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_height">
+            <TextView android:gravity="center" android:id="@id/cluster_year_key_view" android:layout_width="65.0dip" android:layout_height="fill_parent" style="@style/NetDisk.TextAppearance.AmazingLarge.Blue" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cluster_no_date_layout" android:layout_width="65.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_height">
+            <ImageView android:id="@id/cluster_no_date_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:src="@drawable/timeline_no_date_normal_icon" android:layout_centerHorizontal="true" />
+            <TextView android:gravity="center|top" android:id="@id/cluster_no_date_text" android:paddingTop="2.0dip" android:layout_width="65.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_cluster_condition_height" android:text="@string/cloudimage_timeline_cluster_no_date" android:layout_below="@id/cluster_no_date_image" style="@style/NetDisk.TextAppearance.Smaller.Blue" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cluster_selection_layout" android:layout_width="@dimen/cloudimage_item_timeline_header_cluster_key_width" android:layout_height="@dimen/cloudimage_item_timeline_header_height">
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/cluster_selection_flag_layout" android:layout_width="@dimen/cloudimage_item_timeline_header_cluster_condition_width" android:layout_height="@dimen/cloudimage_item_timeline_header_cluster_key_height">
+                <ImageView android:id="@id/cluster_selection_flag_image" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_checkbox_selector" android:layout_alignParentBottom="true" />
+                <TextView android:id="@id/cluster_selection_text" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/selection" android:layout_toRightOf="@id/cluster_selection_flag_image" android:layout_alignParentBottom="true" style="@style/NetDisk.TextAppearance.Small.Blue" />
+            </RelativeLayout>
+            <ImageView android:id="@id/cluster_divide_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_cluster_divide_line" android:layout_below="@id/cluster_selection_flag_layout" android:layout_centerHorizontal="true" />
+            <TextView android:gravity="center|top" android:id="@id/cluster_selection_condition_view" android:paddingTop="2.0dip" android:layout_width="@dimen/cloudimage_item_timeline_header_cluster_condition_width" android:layout_height="@dimen/cloudimage_item_timeline_header_cluster_condition_height" android:layout_below="@id/cluster_divide_line" style="@style/NetDisk.TextAppearance.Smaller.Blue" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/timeline_axis" android:layout_width="1.0dip" android:layout_height="@dimen/cloudimage_item_timeline_header_height" android:layout_marginRight="13.0dip" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/timeline_axis_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/timeline_axis_center_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

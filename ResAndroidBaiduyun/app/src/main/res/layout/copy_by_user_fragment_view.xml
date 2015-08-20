@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/wap2netdiskBottomStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="middle" android:gravity="center" android:id="@id/save_done_path_show" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="2" style="@style/NetDisk.TextAppearance.Large.White" />
+    <include layout="@layout/loading_text_box" />
+    <include layout="@layout/select_remote_path_view" />
+    <include layout="@layout/bottom_bar_done_view" />
+    <include layout="@layout/bottom_bar_reload_view" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/loading" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cloudp2p_sharefile_detail_loading" style="@style/NetDisk.TextAppearance.Middle.White" />
+</FrameLayout>

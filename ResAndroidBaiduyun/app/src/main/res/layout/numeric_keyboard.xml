@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:background="@color/code_locked_keybord_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:gravity="center_horizontal" android:paddingTop="1.0dip" android:paddingBottom="1.0dip">
+        <Button android:id="@id/numeric_one" android:layout_marginRight="1.0dip" android:text="@string/numeric_keyboard_keycode_one" style="@style/CodedLockButtonStyle" />
+        <Button android:id="@id/numeric_two" android:layout_marginRight="1.0dip" android:text="@string/numeric_keyboard_keycode_two" style="@style/CodedLockButtonStyle" />
+        <Button android:id="@id/numeric_three" android:text="@string/numeric_keyboard_keycode_three" style="@style/CodedLockButtonStyle" />
+    </TableRow>
+    <TableRow android:gravity="center_horizontal" android:paddingBottom="1.0dip">
+        <Button android:id="@id/numeric_four" android:layout_marginRight="1.0dip" android:text="@string/numeric_keyboard_keycode_four" style="@style/CodedLockButtonStyle" />
+        <Button android:id="@id/numeric_five" android:layout_marginRight="1.0dip" android:text="@string/numeric_keyboard_keycode_five" style="@style/CodedLockButtonStyle" />
+        <Button android:id="@id/numeric_six" android:text="@string/numeric_keyboard_keycode_six" style="@style/CodedLockButtonStyle" />
+    </TableRow>
+    <TableRow android:gravity="center_horizontal" android:paddingBottom="1.0dip">
+        <Button android:id="@id/numeric_seven" android:layout_marginRight="1.0dip" android:text="@string/numeric_keyboard_keycode_seven" style="@style/CodedLockButtonStyle" />
+        <Button android:id="@id/numeric_eight" android:layout_marginRight="1.0dip" android:text="@string/numeric_keyboard_keycode_eight" style="@style/CodedLockButtonStyle" />
+        <Button android:id="@id/numeric_nine" android:text="@string/numeric_keyboard_keycode_nine" style="@style/CodedLockButtonStyle" />
+    </TableRow>
+    <TableRow android:gravity="center_horizontal" android:weightSum="3.0">
+        <Button android:id="@id/numeric_cancle" android:layout_marginRight="1.0dip" android:text="@string/cancel" style="@style/CodedLockTextButtonStyle" />
+        <Button android:id="@id/numeric_zero" android:layout_marginRight="1.0dip" android:text="@string/numeric_keyboard_keycode_zero" style="@style/CodedLockButtonStyle" />
+        <ImageButton android:id="@id/numeric_delete" android:src="@drawable/numeric_keyboard_delete" style="@style/CodedLockButtonStyle" />
+    </TableRow>
+</TableLayout>

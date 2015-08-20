@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/NetDisk.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.CircleImageView android:id="@id/iv_icon" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <ImageView android:id="@id/rb_selected_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/ic_checked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/rb_selected_account" android:layout_toRightOf="@id/iv_icon" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_view" layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/top_layout" android:background="@color/blue_black" android:layout_width="fill_parent" android:layout_height="94.0dip" android:layout_below="@id/title_view" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/device_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/p2pshare_dataline_pc_device_icon" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/dataline_quit_button" android:background="@drawable/button_quit_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="-10.0dip" android:layout_alignRight="@id/device_head" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/device_head" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Small.White" />
+    </RelativeLayout>
+    <View android:id="@id/device_line" android:background="@color/blue_black" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/top_layout" />
+    <RelativeLayout android:id="@id/data_line_transfer_layout" android:background="@drawable/tabbar_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/cancel_select_mode_button" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/button_close_small_selector" />
+        <TextView android:gravity="center" android:id="@id/transfer_button" android:background="@drawable/button_green_selector" android:layout_width="170.0dip" android:layout_height="37.0dip" android:text="@string/p2pshare_transfer" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Small.White" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/child_tab_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/data_line_transfer_layout" android:layout_below="@id/device_line">
+        <com.baidu.netdisk.ui.widget.pagertabstrip.PagerFixedTabStrip android:id="@id/pager_tab_strip" style="@style/NetDisk.PageTabStrip.Fixed" />
+        <android.support.v4.view.ViewPager android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pager_tab_strip" />
+        <ImageView android:background="@drawable/child_tab_bottom_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pager_tab_strip" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_select" android:background="@drawable/toolbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/create_folder" style="@style/NetDisk.ToolBar.WithNormalButton">
+        <Button android:id="@id/button_cancel" android:background="@drawable/button_darkgray_selector" android:text="@string/cancel" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+        <Button android:id="@id/button_select" android:background="@drawable/button_blue_selector" android:text="@string/tag_action_move" style="@style/NetDisk.ToolBar.Button.Normal.Short" />
+    </LinearLayout>
+</LinearLayout>

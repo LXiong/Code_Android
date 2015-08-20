@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="93.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/timeline_axis" android:background="@drawable/timeline_axis" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/timeline_axis_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/timeline_axis_center_blue" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/icon_right_arrow_big" android:background="@drawable/icon_right_arrow_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/timeline_thumbnail_background" android:background="@drawable/one_image_pin" android:layout_width="83.0dip" android:layout_height="83.0dip" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/icon_right_arrow_big" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/timeline_thumbnail" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginRight="22.0dip" android:src="@drawable/icon_list_large_image_no_shadow" android:scaleType="centerCrop" android:layout_toLeftOf="@id/icon_right_arrow_big" android:layout_centerVertical="true" />
+    <ImageView android:background="@drawable/mainlist_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="43.0dip" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/timeline_cluster_day" android:layout="@layout/item_timeline_cluster_day" android:layout_width="wrap_content" android:layout_height="93.0dip" android:layout_marginLeft="22.0dip" android:layout_toRightOf="@id/timeline_axis_center" />
+    <ViewStub android:id="@id/timeline_cluster_month" android:layout="@layout/item_timeline_cluster_month" android:layout_width="wrap_content" android:layout_height="93.0dip" android:layout_marginLeft="22.0dip" android:layout_toRightOf="@id/timeline_axis_center" />
+    <ViewStub android:id="@id/timeline_cluster_year" android:layout="@layout/item_timeline_cluster_year" android:layout_width="wrap_content" android:layout_height="93.0dip" android:layout_marginLeft="22.0dip" android:layout_toRightOf="@id/timeline_axis_center" />
+</RelativeLayout>

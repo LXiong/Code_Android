@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/auto_scan_layout" style="@style/NetDisk.ToolBar.WithNormalButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/auto_scan_btn" android:background="@drawable/button_blue_selector" android:text="@string/auto_scan_local_bt" style="@style/NetDisk.ToolBar.Button.Normal.Long" />
+    <include layout="@layout/loading_text_box" />
+</FrameLayout>

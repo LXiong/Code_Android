@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="60dip">
+
+    <TextView
+        android:id="@+id/stockShortCode"
+        android:text="代码"
+        android:textColor="#F59012"
+        android:gravity="center"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="60dip"/>
+
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="1dip"
+        android:layout_height="60dip">
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/stockName"
+        android:text="名称"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="60dip"/>
+
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="1dip"
+        android:layout_height="60dip">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stockCurPrice"
+        android:text="现价"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="60dip"/>
+
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="1dip"
+        android:layout_height="60dip">
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/stockCurRange"
+        android:text="涨幅"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="60dip"/>
+<!--
+    <TextView
+        android:id="@+id/blockSumPrice"
+        android:text="test"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="60dip"/>-->
+
+
+
+</LinearLayout>

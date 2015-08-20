@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_white_gray_background" android:layout_width="fill_parent" android:layout_height="57.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/yi_list_item_left_image" />
+    <include layout="@layout/yi_list_item_right_image" />
+    <TextView android:id="@id/text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="10.0dip" android:text="@string/path_added" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    <TextView android:ellipsize="middle" android:id="@id/text1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:singleLine="true" android:layout_toRightOf="@id/image1" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Middle.BlackWhiteReverse" />
+    <Button android:id="@id/coverClickArea" android:background="@android:color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

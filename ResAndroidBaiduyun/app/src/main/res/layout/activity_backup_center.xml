@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <include layout="@layout/my_netdisk_app_title" />
+    <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/backup_center_album" android:layout_marginTop="9.0dip" netdisk:item_icon="@drawable/icon_backup_album_enable" netdisk:item_title="@string/album_backup" netdisk:entry_class="com.baidu.netdisk.ui.AlbumSettings" netdisk:key_click_statistics="album_backup_click" style="@style/NetDisk.SettingItem.Single" />
+    <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/backup_center_sms" netdisk:item_icon="@drawable/icon_backup_sms_enable" netdisk:item_title="@string/smsmms_backup_restore_title" netdisk:entry_class="com.baidu.netdisk.pim.smsmms.ui.SmsmmsBackupMain" netdisk:key_click_statistics="sms_backup_click" style="@style/NetDisk.SettingItem.Single" />
+    <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/backup_center_file" netdisk:item_icon="@drawable/icon_backup_file_enable" netdisk:item_title="@string/file_backup" netdisk:entry_class="com.baidu.netdisk.ui.FileBackupSettingActivity" netdisk:key_click_statistics="file_backup_click" style="@style/NetDisk.SettingItem.Single" />
+    <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/backup_center_calllog" netdisk:item_icon="@drawable/icon_backup_calllog_enable" netdisk:item_title="@string/calllog_backup_title" netdisk:entry_class="com.baidu.netdisk.pim.calllog.ui.CallLogBackupActivity" netdisk:key_click_statistics="calllog_backup_click" style="@style/NetDisk.SettingItem.Single" />
+    <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/backup_center_pimsync" netdisk:item_icon="@drawable/icon_backup_pim_enable" netdisk:item_title="@string/pim_sync_info" netdisk:entry_class="com.baidu.netdisk.pim.contact.PimSettingsActivity" netdisk:key_click_statistics="pim_sync_click" style="@style/NetDisk.SettingItem.Single" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.little.stockgeek.FragmentB">
+
+    <!--<ImageView
+        android:id="@+id/kkk"
+        android:src="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>-->
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dip"></WebView>
+
+
+
+    <include layout="@layout/layout_time_range"
+        />
+
+
+</FrameLayout>

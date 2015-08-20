@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.widget.NetDiskWebView android:id="@id/content_webview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webview_loading" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Middle" />
+    <com.baidu.netdisk.ui.widget.EmptyView android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/empty_page"
+      xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+</RelativeLayout>

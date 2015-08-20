@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/subtitle_listview_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.RotateImageView android:id="@id/rotate_image_refreshing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/subtitle_loading" android:layout_alignTop="@id/subtitle_name" android:layout_alignParentLeft="true" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/image_check_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/subtitle_check_mark" android:layout_toRightOf="@id/rotate_image_refreshing" android:layout_alignTop="@id/subtitle_name" />
+    <TextView android:id="@id/index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/image_check_mark" android:layout_alignTop="@id/subtitle_name" style="@style/NetDisk.TextAppearance.Small.Gray" />
+    <TextView android:ellipsize="middle" android:id="@id/subtitle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" android:layout_toRightOf="@id/index" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Small.Gray" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar_layout" layout="@layout/my_netdisk_app_title" />
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_bar" android:layout_below="@id/titlebar_layout" />
+    <LinearLayout android:gravity="center" android:id="@id/bottom_bar" android:layout_alignParentBottom="true" style="@style/NetDisk.ToolBar.WithNormalButton">
+        <Button android:id="@id/share_button" android:background="@drawable/button_blue_selector" android:text="@string/cloudp2p_share_netdisk_file_button" style="@style/NetDisk.ToolBar.Button.Normal.Long" />
+    </LinearLayout>
+</RelativeLayout>

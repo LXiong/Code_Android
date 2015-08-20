@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.netdisk.ui.widget.PullWidgetListView android:id="@id/resource_list" android:listSelector="@android:color/transparent" android:fastScrollEnabled="true" style="@style/NetDisk.ListView" />
+        <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/my_resource_empty_text"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+        <ScrollView android:id="@id/empty_view_with_guide" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:id="@id/empty_text_for_push" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/push_transfer_list_empty_msg" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/push_transfer_list_empty_img" />
+            </LinearLayout>
+        </ScrollView>
+        <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="vertical" android:id="@id/empty_view_without_guide" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/no_transfer_recorder"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/edit_tools_box" android:visibility="gone" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.ToolBar.WithIconButton">
+        <Button android:id="@id/edit_tools_delete_btn" android:text="@string/quick_action_delete" android:drawableTop="@drawable/edit_tools_delete_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    </LinearLayout>
+</RelativeLayout>

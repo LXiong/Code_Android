@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.netdisk.ui.widget.PullWidgetListView android:id="@id/listview_follow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/layout_empty" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/layout_empty_view_header" layout="@layout/listview_header_follow_list" />
+            <com.baidu.netdisk.ui.widget.EmptyView android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/personalpage_follow_empty"
+              xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

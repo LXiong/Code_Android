@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <include layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/background_settings_sub_head" android:paddingTop="15.0dip" android:paddingBottom="23.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="17.5dip" android:text="@string/phone_forget_head_title" android:singleLine="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="32.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_forget_pc" />
+                    <ImageView android:id="@id/settings_sub_head_main_status_icon" android:background="@drawable/phone_forget_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_forget_disconnect" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_forget_phone" />
+                </LinearLayout>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:id="@id/setting_sub_head_op_button" android:background="@drawable/button_blue_white_stroke_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="191.0dip" android:minHeight="45.0dip" android:text="@string/phone_forget_disconnect" style="@style/NetDisk.TextAppearance.Middle.ButtonWhite" />
+                    <Button android:id="@id/setting_sub_head_open_button" android:background="@drawable/button_blue_white_stroke_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="191.0dip" android:minHeight="45.0dip" android:text="@string/phone_forget_open" style="@style/NetDisk.TextAppearance.Middle.ButtonWhite" />
+                </RelativeLayout>
+            </LinearLayout>
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/unlock_phone_forget" netdisk:item_title="@string/mobile_forget_title" netdisk:item_info="@string/unlock_forget_phone" netdisk:show_checkbox="true" netdisk:key_checkbox="phone_forget" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Single" />
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="17.5dip" android:text="@string/phone_forget_description_title" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="14.0dip" android:text="@string/phone_forget_description_content_first" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="14.0dip" android:text="@string/phone_forget_description_content_second" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="17.5dip" android:text="@string/phone_forget_depend_on" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:background="@color/blue_black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/phone_forget_manage" android:drawableLeft="@drawable/album_manage" android:drawablePadding="@dimen/set_item_icon_title_padding" style="@style/NetDisk.TextAppearance.Smaller.White" />
+    </LinearLayout>
+</LinearLayout>

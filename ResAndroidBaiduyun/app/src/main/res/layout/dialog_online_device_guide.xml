@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" style="@style/BaiduNetDiskDialogBackgroundstyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="@dimen/device_guide_dialog_width" android:layout_height="@dimen/device_guide_dialog_height">
+            <ImageView android:layout_width="@dimen/device_guide_image_width" android:layout_height="@dimen/device_guide_image_height" android:src="@drawable/device_publish_guide" />
+            <Button android:textColor="@color/white_to_semitransparent" android:layout_gravity="center_horizontal" android:id="@id/alertdialog_btn_cancel" android:background="@drawable/button_blue_selector" android:layout_width="@dimen/device_guide_button_width" android:layout_height="@dimen/device_guide_button_height" android:layout_marginTop="@dimen/device_guide_button_top" android:layout_marginBottom="@dimen/device_guide_button_bottom" android:text="@string/experience_immediately" style="@style/NetDisk.TextAppearance.Large.Black" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

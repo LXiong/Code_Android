@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/wifiscanner_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/searching_ball" android:paddingBottom="@dimen/p2p_quit_btn_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/replay_detection" android:background="@drawable/circle_bg" android:layout_width="@dimen/p2p_quit_btn_bgsize" android:layout_height="@dimen/p2p_quit_btn_bgsize" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/close_icon" android:clickable="false" android:layout_width="@dimen/p2p_quit_btn_size" android:layout_height="@dimen/p2p_quit_btn_size" android:src="@drawable/p2pshare_replay_selector" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/txt_replay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/p2pshare_dataline_wifi_scanner_replay" android:includeFontPadding="false" android:layout_below="@id/replay_detection" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Small.White" />
+    </RelativeLayout>
+    <TextView android:id="@id/p2pshare_dataline_no_detection_pc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="68.0dip" android:text="@string/p2pshare_dataline_no_detection_pc" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Middle.White" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:layout_above="@id/searching_ball" android:layout_below="@id/p2pshare_dataline_no_detection_pc_text" android:layout_centerHorizontal="true">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p2pshare_dataline_maybe_try" style="@style/NetDisk.TextAppearance.Small.White" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/p2pshare_dataline_try_detection_1" style="@style/NetDisk.TextAppearance.Small.White" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/p2pshare_dataline_try_detection_2" style="@style/NetDisk.TextAppearance.Small.White" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/p2pshare_dataline_try_detection_3" style="@style/NetDisk.TextAppearance.Small.White" />
+    </LinearLayout>
+</RelativeLayout>

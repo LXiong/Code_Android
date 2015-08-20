@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/wifiscanner_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/searching_ball" android:paddingBottom="@dimen/p2p_quit_btn_bottom" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/reconnect_detection" android:background="@drawable/circle_bg" android:layout_width="@dimen/p2p_quit_btn_bgsize" android:layout_height="@dimen/p2p_quit_btn_bgsize" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/close_icon" android:clickable="false" android:layout_width="@dimen/p2p_quit_btn_size" android:layout_height="@dimen/p2p_quit_btn_size" android:src="@drawable/p2pshare_replay_selector" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/txt_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/p2pshare_dataline_wifi_scanner_replay" android:includeFontPadding="false" android:layout_below="@id/reconnect_detection" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Small.White" />
+    </RelativeLayout>
+    <TextView android:id="@id/connect_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="68.0dip" android:text="@string/p2pshare_dataline_connect_info" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Middle.White" />
+    <TextView android:id="@id/please_wait_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/p2pshare_dataline_please_wait" android:layout_below="@id/connect_info_name" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Small.White" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:layout_below="@id/please_wait_text" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/middle_center_rl" android:background="@drawable/p2pshare_dataline_conect_device_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/connect_states_icon" android:background="@drawable/p2pshare_dataline_conect_device_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/p2pshare_dataline_pc_device_icon" android:layout_toRightOf="@id/middle_center_rl" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/p2pshare_dataline_phone_device_icon" android:layout_toLeftOf="@id/middle_center_rl" />
+    </RelativeLayout>
+</RelativeLayout>

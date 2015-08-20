@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NetDisk.TextAppearance.Middle.Similarity" parent="@style/NetDisk.TextAppearance.Middle">
+        <item name="android:textSize">12.5dip</item>
+        <item name="android:textColor">#ff5d3609</item>
+    </style>
+</resources>

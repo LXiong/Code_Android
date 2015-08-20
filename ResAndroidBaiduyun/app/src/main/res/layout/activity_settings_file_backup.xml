@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <include layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/album_setting_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/file_setting_backup_show" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/file_auto_backup" netdisk:item_title="@string/file_backup_wifi" netdisk:item_info="@string/album_backup_wifi_backup" netdisk:show_checkbox="true" netdisk:key_checkbox="file_auto_backup" netdisk:outer_click_event="true" style="@style/NetDisk.SettingItem.Top" />
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/backup_center_album" netdisk:item_title="@string/select_backup_files" netdisk:entry_class="com.baidu.netdisk.ui.BackupFileListActivity" style="@style/NetDisk.SettingItem.Bottom" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:background="@color/blue_black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/bacup_file_manage" android:drawableLeft="@drawable/album_manage" android:drawablePadding="@dimen/set_item_icon_title_padding" style="@style/NetDisk.TextAppearance.Smaller.White" />
+    </LinearLayout>
+</LinearLayout>

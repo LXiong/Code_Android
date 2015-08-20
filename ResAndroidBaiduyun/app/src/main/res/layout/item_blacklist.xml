@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_box" android:background="@drawable/list_item_white_gray_background" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="69.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <RelativeLayout android:id="@id/right_layout" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <Button android:id="@id/btn_box" android:background="@drawable/button_blue_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/delete_ok_button" style="@style/NetDisk.TextAppearance.Smaller.White" />
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Yi.Widget.ProgressBar.Small" />
+    </RelativeLayout>
+    <TextView android:textAppearance="@style/NetDisk.TextAppearance.Middle.Black" android:ellipsize="middle" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="6.0dip" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/right_layout" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+</RelativeLayout>

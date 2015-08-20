@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/mbox_detail_head_framelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <FrameLayout android:id="@id/mbox_detail_footer_framelayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:layout_alignParentBottom="true" />
+        <FrameLayout android:id="@id/mbox_detail_content_framelayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/mbox_detail_footer_framelayout" android:layout_below="@id/mbox_detail_head_framelayout" />
+        <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="horizontal" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/p2pcloud_sharefile_canceled"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BaiduNetDiskDialogBackgroundstyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/location_images_selector_width" android:layout_height="@dimen/location_images_selector_height">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/images_selector_dialog_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/location_images_item_horizantal_size" android:text="@string/cloundimage_location_images_selecdtor" style="@style/NetDisk.TextAppearance.Large.White" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@drawable/images_selector_dialog_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <GridView android:gravity="fill" android:id="@id/images_gridview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/location_images_item_horizantal_size" android:layout_marginTop="@dimen/location_images_item_vertical_size" android:layout_marginRight="@dimen/location_images_item_horizantal_size" android:layout_marginBottom="@dimen/location_images_item_vertical_size" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:horizontalSpacing="@dimen/location_images_item_horizantal_size" android:verticalSpacing="@dimen/location_images_item_vertical_size" android:stretchMode="none" android:columnWidth="@dimen/location_images_item_background_size" android:numColumns="3" android:fastScrollEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/share_guide_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_view" layout="@layout/my_netdisk_app_title" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="94.0dip" android:src="@drawable/cloudp2p_share_file_guide" />
+    <ImageView android:id="@id/share_guide_view" android:background="@anim/cloudp2p_share_guide_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" />
+    <Button android:id="@id/select_file_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="34.0dip" android:layout_marginRight="50.0dip" android:text="@string/cloudp2p_select_file" style="@style/NetDisk.Button.BackupOperationalBlue" />
+</LinearLayout>

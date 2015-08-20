@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/personal_home_title_bar" android:background="@drawable/title_bar_background_netdisk" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="middle" android:id="@id/personal_home_title" android:paddingLeft="60.0dip" android:paddingRight="60.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@style/NetDisk.AppTitleBar" />
+    <ImageView android:id="@id/personal_home_back" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/titlebar_back_button_selector" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/personal_home_go_home" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/personal_homepage_titl_home_btn_selector" android:layout_alignParentRight="true" />
+</RelativeLayout>

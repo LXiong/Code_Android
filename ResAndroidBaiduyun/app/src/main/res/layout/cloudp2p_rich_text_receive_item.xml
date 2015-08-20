@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/NetDisk.Conversation.Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/tv_date" android:background="@drawable/time_title_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/conversation_margin_bottom" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Smaller.White" />
+    <ImageView android:id="@id/iv_icon" android:layout_below="@id/tv_date" android:layout_alignParentLeft="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <TextView android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/iv_icon" android:layout_alignTop="@id/iv_icon" style="@style/NetDisk.TextAppearance.Smaller.BlueGray" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_content" android:background="@drawable/cloudp2p_people_message_received_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_icon" android:layout_below="@id/tv_name">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/cloudp2p_rich_text_content_layout" />
+    </RelativeLayout>
+    <TextView android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_below="@id/rl_content" android:layout_alignLeft="@id/rl_content" style="@style/NetDisk.TextAppearance.Smaller.Red" />
+    <CheckBox android:id="@id/cb_check" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:button="@drawable/edit_checkbox_selector" android:layout_alignTop="@id/iv_icon" android:layout_alignParentRight="true" />
+</RelativeLayout>

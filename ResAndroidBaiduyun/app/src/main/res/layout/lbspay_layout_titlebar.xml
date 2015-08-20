@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.android.lbspay.view.TitleBar android:orientation="vertical" android:id="@id/titlebar" android:background="@color/lbspay_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/title_left_btn" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:layout_alignParentLeft="true" android:contentDescription="@string/ebpay_img" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0sp" android:textColor="@color/lbspay_text_deep_gray" android:ellipsize="end" android:gravity="center" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/title_right_btn" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:layout_alignParentRight="true" android:contentDescription="@string/ebpay_img" />
+    </RelativeLayout>
+    <View android:background="@color/lbspay_color_c6c6c6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</com.baidu.android.lbspay.view.TitleBar>

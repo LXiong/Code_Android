@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/share_controller_bar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_controller_fold_layout" android:background="@drawable/right_control_bar_bg" android:visibility="visible" android:layout_width="74.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/video_share_layout" android:paddingTop="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:paddingBottom="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videoplayer_share_item_selector" />
+            <TextView android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/videoplayer_share_action_title" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/horizontal_line_view" android:background="@drawable/right_controller_line" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fold_delete_layout" android:paddingTop="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:paddingBottom="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videoplayer_delete_item_selector" />
+            <TextView android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/videoplayer_delete_action_title" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fold_save_layout" android:paddingTop="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:paddingBottom="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/videoplayer_fold_save_icon" android:background="@drawable/videoplayer_save_item_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/videoplayer_fold_save_title" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/videoplayer_save_action_title" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/horizontal_line_download_view" android:background="@drawable/right_controller_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fold_download_layout" android:paddingTop="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:paddingBottom="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videoplayer_download_item_selector" />
+            <TextView android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/videoplayer_download_action_title" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/horizontal_line_dlna_view" android:background="@drawable/right_controller_line" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fold_dlna_layout" android:paddingTop="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:paddingBottom="@dimen/video_player_plugin_rightcontroler_item_paddingtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/videoplayer_fold_dlna_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videoplayer_dlna_item_selector" />
+            <TextView android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/videoplayer_dlna_action_title" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/save_prompt" android:background="@drawable/videoplayer_online_start_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_toLeftOf="@id/share_controller_fold_layout" android:layout_alignTop="@id/share_controller_fold_layout" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/totalLayout" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <include android:id="@id/pick_folder_path" layout="@layout/folder_path" />
+    <RelativeLayout android:id="@id/layout_emptyview" android:background="@color/activity_view_bg" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.ui.widget.ListViewEx android:id="@android:id/list" style="@style/NetDisk.ListView" />
+        <TextView android:gravity="center" android:id="@id/loading_text" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/list_loading_label" android:layout_centerInParent="true" android:fadeScrollbars="true" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+        <TextView android:gravity="center" android:id="@id/currentPath" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Middle.Gray" />
+        <com.baidu.netdisk.ui.widget.EmptyView android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/this_folder_is_empty"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    </RelativeLayout>
+    <com.baidu.netdisk.ui.widget.ColorfulProgressView android:id="@id/colorfull_progress_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/quota_progress_bar_height" />
+    <include android:visibility="gone" layout="@layout/select_remote_path_view" />
+    <include android:visibility="gone" layout="@layout/auto_scan_layout" />
+</LinearLayout>

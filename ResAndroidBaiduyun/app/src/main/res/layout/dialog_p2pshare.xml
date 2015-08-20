@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" style="@style/BaiduNetDiskDialogBackgroundstyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:id="@id/contentLayout" android:background="@drawable/p2pshare_dialog_image" android:layout_width="308.0dip" android:layout_height="wrap_content" android:minHeight="80.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="308.0dip" android:layout_height="44.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/dialog_button_cancel" android:background="@drawable/dialog_button_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/p2pshare_dialog_wait" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Large.Black" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/dialog_button_ok" android:background="@drawable/dialog_button_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/p2pshare_dialog_goto" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Large.Black" />
+        </LinearLayout>
+        <ImageView android:id="@id/horizontal_line" android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/vertical_line" android:background="#ffdbdbdb" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

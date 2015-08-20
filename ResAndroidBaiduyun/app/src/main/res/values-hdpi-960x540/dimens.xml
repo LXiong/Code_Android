@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="checkbox_magin_bottom">100.0dip</dimen>
+    <dimen name="cloudimage_item_timeline_header_cluster_condition_height">31.0dip</dimen>
+    <dimen name="cloudimage_item_timeline_header_cluster_condition_width">65.0dip</dimen>
+    <dimen name="cloudimage_item_timeline_header_cluster_key_height">56.0dip</dimen>
+    <dimen name="cloudimage_item_timeline_header_cluster_key_width">65.0dip</dimen>
+    <dimen name="cloudimage_item_timeline_header_height">89.0dip</dimen>
+    <dimen name="cloudimage_item_timeline_header_width">85.0dip</dimen>
+    <dimen name="codedlock_prompt_title_padding">40.0dip</dimen>
+    <dimen name="device_guide_button_bottom">15.0dip</dimen>
+    <dimen name="device_guide_button_height">40.0dip</dimen>
+    <dimen name="device_guide_button_top">10.0dip</dimen>
+    <dimen name="device_guide_button_width">230.0dip</dimen>
+    <dimen name="device_guide_dialog_height">470.0dip</dimen>
+    <dimen name="device_guide_dialog_width">326.0dip</dimen>
+    <dimen name="device_guide_image_height">405.0dip</dimen>
+    <dimen name="device_guide_image_width">326.0dip</dimen>
+    <dimen name="imagepager_bottons_paddingbottom">6.0dip</dimen>
+    <dimen name="location_images_item_background_size">82.0dip</dimen>
+    <dimen name="location_images_item_count_size">29.0dip</dimen>
+    <dimen name="location_images_item_horizantal_size">18.0dip</dimen>
+    <dimen name="location_images_item_image_size">65.0dip</dimen>
+    <dimen name="location_images_item_vertical_size">12.0dip</dimen>
+    <dimen name="location_images_selector_height">366.0dip</dimen>
+    <dimen name="location_images_selector_width">325.0dip</dimen>
+    <dimen name="mobile_search_padding_huge">111.0dip</dimen>
+    <dimen name="photo_gridview_item_height">85.0dip</dimen>
+    <dimen name="photo_gridview_item_width">85.0dip</dimen>
+    <dimen name="toast_margin_left">48.0dip</dimen>
+    <dimen name="toast_margin_right">48.0dip</dimen>
+    <dimen name="video_player_plugin_rightcontroler_item_paddingtop">8.0dip</dimen>
+    <dimen name="wap_2_netdisk_info_margin_top">65.0dip</dimen>
+</resources>

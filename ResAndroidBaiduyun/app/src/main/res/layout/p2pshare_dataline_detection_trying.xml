@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/wifiscanner_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.p2pshare.ui.WaveWidget android:id="@id/waves" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/p2pshare_dataline_detection_pc_ing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="68.0dip" android:text="@string/p2pshare_dataline_detection_pc_ing" style="@style/NetDisk.TextAppearance.Large.White" />
+        <RelativeLayout android:id="@id/device_list_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="45.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+            <ListView android:id="@id/detection_device_listview" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:transcriptMode="alwaysScroll" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="@dimen/p2pshare_dataline_device_divider_height" android:layout_alignParentTop="true" android:layout_centerInParent="true" android:overScrollMode="never" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/searching_ball" android:paddingBottom="@dimen/p2p_quit_btn_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/close_ball" android:background="@drawable/circle_bg" android:layout_width="@dimen/p2p_quit_btn_bgsize" android:layout_height="@dimen/p2p_quit_btn_bgsize" android:layout_centerHorizontal="true">
+                <com.baidu.netdisk.p2pshare.ui.dataline.RoundProgressBar android:id="@id/close_icon" android:padding="@dimen/p2pshare_dataline_detection_round_width" android:clickable="false" android:layout_width="@dimen/p2pshare_dataline_detection_progress_size" android:layout_height="@dimen/p2pshare_dataline_detection_progress_size" android:src="@drawable/wifi_scanner_close_hot_selector" android:layout_centerInParent="true"
+                  xmlns:android_custom="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+            </RelativeLayout>
+            <TextView android:id="@id/txt_quit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/p2pshare_dataline_detection_exit" android:includeFontPadding="false" android:layout_below="@id/close_ball" android:layout_centerHorizontal="true" style="@style/NetDisk.TextAppearance.Small.White" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

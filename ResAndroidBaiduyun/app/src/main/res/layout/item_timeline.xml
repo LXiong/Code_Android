@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/cluster_layout" layout="@layout/item_timeline_header" />
+    <ImageView android:id="@id/item_divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_toRightOf="@id/cluster_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/images_layout" android:layout_width="wrap_content" android:layout_height="@dimen/cloudimage_item_timeline_header_height" android:layout_toRightOf="@id/cluster_layout" android:layout_below="@id/item_divider" />
+</RelativeLayout>

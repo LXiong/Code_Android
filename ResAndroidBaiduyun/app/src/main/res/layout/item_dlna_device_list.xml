@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/list_item_white_gray_background" android:padding="13.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="69.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/device_type_icon" android:src="@drawable/dlna_pc_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <RelativeLayout android:id="@id/device_status_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:textColor="@color/white_to_semitransparent" android:layout_gravity="center_vertical" android:id="@id/relate_device_btn" android:background="@drawable/button_blue_selector" android:focusable="false" android:layout_width="60.0dip" android:layout_height="29.0dip" android:text="@string/dlna_device_relate" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff118800" android:id="@id/relate_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dlna_device_has_related" android:singleLine="true" />
+    </RelativeLayout>
+    <TextView android:ellipsize="middle" android:id="@id/device_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:text="test" android:singleLine="true" android:layout_toLeftOf="@id/device_status_layout" android:layout_toRightOf="@id/device_type_icon" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+</RelativeLayout>

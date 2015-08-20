@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- <item
+        android:state_pressed="true">
+        <color android:color="@color/Indigo_colorPrimaryDark"></color>
+    </item> -->
+
+  <!--  <item
+        android:state_pressed="false">
+        <color android:color="@color/Indigo_colorPrimary"></color>
+    </item>-->
+
+    <item
+        android:state_checked="false"
+        android:drawable="@color/Indigo_colorPrimary" />
+    <item
+        android:state_checked="true"
+        android:drawable="@color/Indigo_colorPrimaryDark" />
+
+</selector>

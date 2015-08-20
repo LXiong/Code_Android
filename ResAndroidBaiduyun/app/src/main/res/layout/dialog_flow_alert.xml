@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" style="@style/BaiduNetDiskDialogBackgroundstyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/upload_file_popup_bg" android:layout_width="280.0dip" android:layout_height="wrap_content">
+        <ImageView android:id="@android:id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:src="@drawable/ic_netdisk" />
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/txt_confirmdialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="@string/delete_file_dialog_title" style="@style/NetDisk.TextAppearance.Large.Black" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentLayout" android:background="#fff8f8f8" android:layout_width="280.0dip" android:layout_height="wrap_content" android:minHeight="80.0dip" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/text_content_tips" android:visibility="gone" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="17.0dip" android:singleLine="true" style="@style/NetDisk.TextAppearance.Smaller.Black" />
+        <ImageView android:id="@id/horizontal_line" android:background="#ffdbdbdb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+        <TextView android:gravity="left" android:id="@id/text_content" android:visibility="visible" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="10.0dip" android:text="@string/delete_file_dialog_confirm" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/content_loading_layout" android:background="#fff8f8f8" android:visibility="gone" android:layout_width="280.0dip" android:layout_height="wrap_content" android:minHeight="80.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@android:id/icon" android:background="@drawable/image_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/text_loading_content" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:text="@string/delete_file_dialog_confirm" android:layout_centerInParent="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="280.0dip" android:layout_height="44.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/dialog_button_cancel" android:background="@drawable/dialog_button_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Large.Black" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/dialog_button_ok" android:background="@drawable/dialog_button_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ok" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Large.Black" />
+        </LinearLayout>
+        <ImageView android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/vertical_line" android:background="#ffdbdbdb" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

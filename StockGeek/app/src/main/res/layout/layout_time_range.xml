@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="50dip"
+              android:background="@color/Indigo_colorPrimary"
+              android:orientation="horizontal">
+
+
+    <RadioGroup
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn1min"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/block_btn_selector"
+            android:button="@null"
+            android:text="分时"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/btn30min"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/block_btn_selector"
+            android:button="@null"
+            android:text="30分钟"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/btn1day"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/block_btn_selector"
+            android:button="@null"
+            android:text="日K"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/btn7day"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/block_btn_selector"
+            android:button="@null"
+            android:text="周K"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/btn30day"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/block_btn_selector"
+            android:button="@null"
+            android:text="月K"
+            android:textColor="@android:color/white"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/videoPlayerPanelView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/video_surfaceview" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.baidu.cyberplayer.core.BVideoView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/video_subtitle_view" android:visibility="gone" android:layout_width="@dimen/subtitle_view_width" android:layout_height="@dimen/subtitle_view_height" android:layout_centerInParent="true">
+        <include layout="@layout/video_player_subtitle_view" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/video_loading_box" android:background="@drawable/video_loading_box_ng" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/showprepare" android:background="@drawable/image_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/cachehint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/NetDisk.TextAppearance.Large.Gray" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/retryBox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/retryText" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_load_failed" style="@style/NetDisk.TextAppearance.Large.White" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/retryBtn" android:background="@drawable/video_retry_btn_bg_selector" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/NetDisk.TextAppearance.Large.Gray">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_retry_icon" />
+                <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" style="@style/NetDisk.TextAppearance.Large.White" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/controlbar" android:background="@drawable/control_panel_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/pause" android:background="@null" android:paddingLeft="13.0dip" android:layout_width="53.0dip" android:layout_height="53.0dip" android:src="@drawable/btn_pause_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/voice" android:background="@null" android:layout_width="40.0dip" android:layout_height="53.0dip" android:layout_marginRight="11.0dip" android:src="@drawable/btn_voice_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:gravity="center" android:id="@id/quality_btn" android:background="@drawable/video_pop_window_bg" android:padding="2.0dip" android:layout_width="@dimen/quality_box_width" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:text="@string/low_quality" android:layout_toLeftOf="@id/voice" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Large.Gray" />
+        <Button android:gravity="center" android:id="@id/subtitle_btn" android:background="@drawable/video_pop_window_bg" android:padding="2.0dip" android:layout_width="@dimen/quality_box_width" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:text="@string/subtitle_btn" android:layout_toLeftOf="@id/quality_btn" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Large.Gray" />
+        <SeekBar android:id="@id/mediacontroller_progress" android:paddingLeft="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="5.0dip" android:max="100" android:progressDrawable="@drawable/custom_seakbar_style" android:minHeight="5.0dip" android:thumb="@drawable/progress_handle" android:thumbOffset="15.0dip" android:layout_toLeftOf="@id/subtitle_btn" android:layout_toRightOf="@id/pause" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:id="@id/time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/pause" android:layout_below="@id/mediacontroller_progress" style="@style/NetDisk.TextAppearance.Large.Gray" />
+        <TextView android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/subtitle_btn" android:layout_below="@id/mediacontroller_progress" style="@style/NetDisk.TextAppearance.Large.Gray" />
+    </RelativeLayout>
+    <TextView android:id="@id/big_time_current" android:background="@drawable/video_player_prompt_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_above="@id/controlbar" android:layout_alignParentLeft="true" style="@style/NetDisk.TextAppearance.AmazingLarge.White" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/root_bottom_bar" style="@style/NetDisk.ToolBar.WithIconButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_to_download" android:text="@string/quick_action_download" android:drawableTop="@drawable/edit_tools_download_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <Button android:id="@id/btn_to_share" android:text="@string/quick_action_share" android:drawableTop="@drawable/edit_tools_share_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <Button android:id="@id/btn_to_push" android:text="@string/quick_action_push" android:drawableTop="@drawable/edit_tools_push_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <Button android:id="@id/btn_to_delete" android:text="@string/quick_action_delete" android:drawableTop="@drawable/edit_tools_delete_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <Button android:id="@id/btn_to_rename" android:text="@string/quick_action_rename" android:drawableTop="@drawable/edit_tools_rename_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+    <Button android:id="@id/btn_more" android:text="@string/quick_action_more" android:drawableTop="@drawable/edit_tools_more_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+</LinearLayout>

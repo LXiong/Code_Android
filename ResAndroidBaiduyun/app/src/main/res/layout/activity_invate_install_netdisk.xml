@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0dip" android:textColor="#ff409be4" android:id="@id/method_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_invate_method1_top" android:text="@string/invate_install_method_1" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/invate_frend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_invate_friend_top" android:text="@string/invate_install_zero" android:layout_below="@id/method_1" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/invite" android:background="@drawable/button_green_selector" android:layout_width="172.0dip" android:layout_height="45.0dip" android:layout_marginTop="16.0dip" android:layout_below="@id/invate_frend" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invate_install" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/line" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginTop="@dimen/p2p_invate_line_top" android:src="@drawable/line_division" android:layout_below="@id/invite" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="20.0dip" android:textColor="#ff409be4" android:id="@id/method_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_invate_method2_top" android:text="@string/invate_install_method_2" android:layout_below="@id/line" android:layout_centerInParent="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/scanning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/p2p_invate_scaning_top" android:text="@string/invate_install_qrcode_introduction" android:layout_below="@id/method_2" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/qrcode_image" android:layout_width="@dimen/qrcode_size" android:layout_height="@dimen/qrcode_size" android:layout_marginTop="@dimen/p2p_invate_qrcode_top" android:layout_below="@id/scanning" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

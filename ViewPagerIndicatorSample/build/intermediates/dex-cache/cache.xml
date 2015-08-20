@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/tusm/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/MyCode/Code_Android/ViewPagerIndicatorSample/sample/build/intermediates/pre-dexed/debug/support-v4-18.0.0-b8f81181bd53e2c945de424784abdeab46f05ee9.jar" />
+    </item>
+    <item
+        jar="/MyCode/Code_Android/ViewPagerIndicatorSample/sample/build/intermediates/exploded-aar/ViewPagerIndicatorSample/library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="420eaf77d6473148715e876d3096ec562522ce75">
+        <dex dex="/MyCode/Code_Android/ViewPagerIndicatorSample/sample/build/intermediates/pre-dexed/debug/classes-94018a5b1b8e67d34673ba31525f15cbf82534fb.jar" />
+    </item>
+
+</items>

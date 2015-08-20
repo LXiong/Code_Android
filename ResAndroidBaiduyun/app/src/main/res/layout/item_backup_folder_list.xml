@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.netdisk.ui.widget.CheckableItemLayout android:id="@id/checkable_layout" android:background="@drawable/list_item_white_gray_background" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="69.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/yi_list_item_right_image" />
+    <ImageView android:id="@id/image1" android:src="@drawable/icon_list_folder" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <TextView android:ellipsize="middle" android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="50.0dip" android:singleLine="true" android:layout_toRightOf="@id/image1" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@android:id/button1" android:background="@null" android:paddingLeft="22.0dip" android:paddingRight="11.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_multiselect" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.baidu.netdisk.ui.widget.CheckableItemLayout>

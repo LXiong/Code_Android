@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:id="@id/empty_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/empty_view" android:layout_width="wrap_content" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/folder_empty"
+              xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+        </ScrollView>
+        <ViewStub android:id="@id/imagedata_notready_viewstub" android:layout="@layout/cloud_image_notfinish_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/bottom_empty_view" android:background="@drawable/tabbar_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

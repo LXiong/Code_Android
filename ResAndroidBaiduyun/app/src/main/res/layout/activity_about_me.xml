@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <FrameLayout android:id="@id/about_me_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ScrollView android:paddingTop="4.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/about_me_bottom_empty_view" android:layout_below="@id/about_me_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/my_wallet_entrance" netdisk:item_icon="@drawable/ic_my_wallet" netdisk:item_title="@string/about_wallet_item" netdisk:show_guide_arrow="true" netdisk:outer_click_event="true" netdisk:key_click_statistics="my_wallet_click" style="@style/NetDisk.SettingItem.Top" />
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/my_vip_entrance" netdisk:item_icon="@drawable/ic_my_vip" netdisk:item_title="@string/about_vip_item" netdisk:show_guide_arrow="true" netdisk:key_tag_new="VIP_NEW_TAG" netdisk:tag_new_icon="@drawable/icon_tip" netdisk:outer_click_event="true" netdisk:key_click_statistics="my_vip_click" style="@style/NetDisk.SettingItem.Middle" />
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/my_friends_entrance" netdisk:item_icon="@drawable/icon_my_friends" netdisk:item_title="@string/friend_list_title" netdisk:show_guide_arrow="true" netdisk:outer_click_event="true" netdisk:key_click_statistics="my_friend_click" style="@style/NetDisk.SettingItem.Bottom" />
+            <com.baidu.netdisk.ui.widget.SettingsItemView netdisk:item_icon="@drawable/icon_settings" netdisk:item_title="@string/settings" netdisk:entry_class="com.baidu.netdisk.ui.SettingsActivity" netdisk:show_guide_arrow="true" netdisk:key_click_statistics="settings_click" style="@style/NetDisk.SettingItem.Top" />
+            <com.baidu.netdisk.ui.widget.SettingsItemView android:id="@id/feed_back_entrance" netdisk:item_icon="@drawable/icon_feedback" netdisk:item_title="@string/video_feedback_button" netdisk:entry_class="com.baidu.netdisk.ui.FeedBackActivity" netdisk:show_guide_arrow="true" netdisk:key_click_statistics="click_feedback" style="@style/NetDisk.SettingItem.Bottom" />
+            <Button android:id="@id/button_logout" android:background="@drawable/button_red_flat_selector" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="21.0dip" android:layout_marginBottom="17.0dip" android:text="@string/logout" style="@style/NetDisk.TextAppearance.Middle.White" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/about_me_bottom_empty_view" android:background="@drawable/tabbar_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/main_tab_background_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

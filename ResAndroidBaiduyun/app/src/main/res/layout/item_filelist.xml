@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.netdisk.ui.widget.CheckableItemLayout android:id="@id/checkable_layout" android:descendantFocusability="blocksDescendants" style="@style/NetDisk.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image1" android:layout_centerVertical="true" style="@style/NetDisk.ListViewItem.Icon" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@android:id/button1" android:background="@null" android:focusable="false" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_multiselect" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:ellipsize="middle" android:id="@id/text1" android:paddingTop="@dimen/item_content_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文件名" android:singleLine="true" android:layout_toLeftOf="@android:id/button1" android:layout_toRightOf="@id/image1" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <LinearLayout android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@android:id/button1" android:layout_toRightOf="@id/image1" android:layout_alignLeft="@id/text1" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/filesize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="1.5M" android:maxLines="1" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        <TextView android:id="@id/server_mtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-06-10" android:maxLines="1" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    </LinearLayout>
+</com.baidu.netdisk.ui.widget.CheckableItemLayout>

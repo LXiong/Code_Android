@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.netdisk.personalpage.ui.widget.PullDownFooterView android:gravity="center" android:id="@id/footer_view" android:clickable="true" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_refresh_add_more" android:visibility="visible" android:clickable="true" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/textview_pulldown_more" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personalpage_pulldown_more" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_add_follow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:paddingRight="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personalpage_pulldown_no_more" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+        <Button android:id="@id/btn_add_follow" android:background="@drawable/personalpage_add_follow_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personalpage_pulldown_add_follow" style="@style/NetDisk.TextAppearance.Least.Red" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_bottom_bar_refreshing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.netdisk.ui.widget.RotateImageView android:id="@id/footer_rotate_image_refreshing" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/refresh_progress_rotate_image" />
+        <TextView android:paddingRight="7.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personalpage_pulldown_refreshing" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    </LinearLayout>
+</com.baidu.netdisk.personalpage.ui.widget.PullDownFooterView>

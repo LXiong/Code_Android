@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/video_pop_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/originQuality" android:background="@drawable/transport_list_item_btn_box_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/origin_quality" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Large.Gray" />
+    <Button android:id="@id/lowQuality" android:background="@drawable/transport_list_item_btn_box_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/low_quality" android:layout_weight="1.0" style="@style/NetDisk.TextAppearance.Large.Gray" />
+</LinearLayout>

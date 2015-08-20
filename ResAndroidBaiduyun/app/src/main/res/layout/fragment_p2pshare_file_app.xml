@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.PinnedHeaderGridItemListView android:id="@id/app_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:fastScrollEnabled="true" baidu:columnWidth="@dimen/photo_gridview_item_width" baidu:sideWidth="0.0dip"
+      xmlns:baidu="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+    <include layout="@layout/item_p2pshare_file_app_header" />
+    <com.baidu.netdisk.ui.widget.EmptyView android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/this_folder_is_empty"
+      xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+</RelativeLayout>

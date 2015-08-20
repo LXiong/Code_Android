@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_white_gray_background" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:ellipsize="end" android:id="@id/type_name" android:focusable="false" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="测试测试" android:singleLine="true" android:layout_toRightOf="@id/image" android:layout_centerVertical="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/popup_category_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@android:id/icon" android:background="@drawable/image_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@android:id/icon" android:layout_centerVertical="true">
+        <TextView android:gravity="left" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:text="@string/video_plugin_downloading_tip" style="@style/NetDisk.TextAppearance.Large.Black" />
+        <TextView android:gravity="left" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="50.0dip" android:text="0%" style="@style/NetDisk.TextAppearance.Large.Black" />
+    </LinearLayout>
+</LinearLayout>

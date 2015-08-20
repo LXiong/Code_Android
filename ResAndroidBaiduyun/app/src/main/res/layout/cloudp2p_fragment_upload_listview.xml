@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/mbox_detail_listview" android:fastScrollEnabled="true" style="@style/NetDisk.ListView" />
+    <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="horizontal" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/p2pcloud_sharefile_canceled"
+      xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+</FrameLayout>

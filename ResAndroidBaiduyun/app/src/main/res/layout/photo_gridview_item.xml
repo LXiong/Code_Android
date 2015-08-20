@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/grid_item_layout" android:layout_width="@dimen/photo_gridview_item_width" android:layout_height="@dimen/photo_gridview_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumbnail" android:layout_width="@dimen/photo_gridview_item_width" android:layout_height="@dimen/photo_gridview_item_height" android:src="@drawable/icon_list_large_image_no_shadow" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/forgound" android:background="@drawable/grid_image_forground" android:layout_width="@dimen/photo_gridview_item_width" android:layout_height="@dimen/photo_gridview_item_height" />
+    <ImageView android:id="@id/is_deleting" android:background="@color/black_60p_transparent" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/photo_gridview_item_width" android:layout_height="@dimen/photo_gridview_item_height" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/imageview_checkbox" android:paddingLeft="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_checkbox_selector" android:layout_alignRight="@id/thumbnail" />
+</RelativeLayout>

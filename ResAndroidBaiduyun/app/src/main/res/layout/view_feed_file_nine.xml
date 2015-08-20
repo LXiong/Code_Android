@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk">
+    <TableRow android:paddingBottom="2.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_nine_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_nine_2" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_nine_3" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+    </TableRow>
+    <TableRow android:paddingBottom="2.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_nine_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_nine_5" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_nine_6" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+    </TableRow>
+    <TableRow android:paddingBottom="2.0dip" android:layout_weight="1.0">
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_nine_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_nine_8" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+        <com.baidu.netdisk.personalpage.ui.feedcard.FeedFileItemView android:id="@id/file_item_nine_9" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" netdisk:thumbWidth="92.0dip" netdisk:thumbHeight="92.0dip" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/operation_bar_content" style="@style/NetDisk.FileList.Header">
+        <ImageView android:id="@id/button_sort" android:src="@drawable/main_list_header_rank" style="@style/NetDisk.FileList.HeaderIcon" />
+        <ImageView android:id="@id/button_create_folder" android:src="@drawable/main_list_header_create_folder" style="@style/NetDisk.FileList.HeaderIcon" />
+        <ImageView android:id="@id/button_search" android:src="@drawable/main_list_header_search" style="@style/NetDisk.FileList.HeaderIcon" />
+    </LinearLayout>
+</LinearLayout>

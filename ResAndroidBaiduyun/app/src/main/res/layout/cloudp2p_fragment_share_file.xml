@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.netdisk.ui.widget.PullWidgetListView android:id="@id/listview_objectlist" android:listSelector="@android:color/transparent" style="@style/NetDisk.ListView" />
+    <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="horizontal" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/inbox_list_empty"
+      xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+</RelativeLayout>

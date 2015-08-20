@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center" android:id="@id/textview_tips" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="29.0dip" android:text="@string/contact_time_machine_tips" style="@style/NetDisk.TextAppearance.Smaller.DarkGray" />
+            <RelativeLayout android:id="@id/items_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textview_tips">
+                <ImageView android:id="@id/imageview_axis_padding_top" android:background="@drawable/timeline_axis" android:layout_width="1.0dip" android:layout_height="9.0dip" android:layout_marginLeft="30.0dip" />
+                <com.baidu.netdisk.pim.contact.ui.ContactTimeMachineItemView android:id="@id/first_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageview_axis_padding_top" />
+                <com.baidu.netdisk.pim.contact.ui.ContactTimeMachineItemView android:id="@id/second_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/first_item" />
+                <com.baidu.netdisk.pim.contact.ui.ContactTimeMachineItemView android:id="@id/third_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/second_item" />
+                <include android:id="@id/selector_item" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_below="@id/third_item" layout="@layout/pim_contact_time_machine_selector_item" />
+                <ImageView android:id="@id/imageview_axis_padding_bottom" android:background="@drawable/timeline_axis" android:layout_width="1.0dip" android:layout_height="9.0dip" android:layout_marginLeft="30.0dip" android:layout_below="@id/selector_item" />
+            </RelativeLayout>
+            <TextView android:id="@id/textview_tips_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/contact_time_machine_tips_bottom" android:layout_below="@id/items_layout" android:layout_centerHorizontal="true" />
+            <com.baidu.netdisk.ui.widget.ProgressButton android:id="@id/button_reset" android:layout_marginTop="9.0dip" android:layout_marginBottom="20.0dip" android:text="@string/contact_time_machine_reset" android:layout_below="@id/textview_tips_bottom" android:layout_centerHorizontal="true" style="@style/NetDisk.Button.Single.Blue" />
+        </RelativeLayout>
+    </ScrollView>
+    <com.baidu.netdisk.ui.widget.EmptyView android:gravity="center" android:orientation="horizontal" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/contact_time_machine_no_data_tips"
+      xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+</RelativeLayout>

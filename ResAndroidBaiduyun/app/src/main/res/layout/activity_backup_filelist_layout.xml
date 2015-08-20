@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.netdisk.ui.widget.ListViewEx android:id="@id/back_folder_list" style="@style/NetDisk.ListView" />
+        <com.baidu.netdisk.ui.widget.EmptyView android:orientation="vertical" android:id="@id/empty_view" android:background="@color/activity_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" netdisk:empty_image="@drawable/empty_no_data" netdisk:empty_text="@string/no_backup_path"
+          xmlns:netdisk="http://schemas.android.com/apk/res/com.baidu.netdisk" />
+        <Button android:textColor="@color/white_to_semitransparent" android:id="@id/add_path_button" android:background="@drawable/button_blue_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="30.0dip" android:text="@string/add_path_button" android:layout_below="@id/empty_view" style="@style/NetDisk.TextAppearance.Large.Black" />
+        <LinearLayout android:id="@id/edit_tools_box" android:visibility="gone" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="@style/NetDisk.ToolBar.WithIconButton">
+            <Button android:id="@id/edit_tools_delete_btn" android:text="@string/quick_action_delete" android:drawableTop="@drawable/edit_tools_delete_btn" style="@style/NetDisk.ToolBar.Button.Icon" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

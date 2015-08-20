@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_parent" android:background="@color/activity_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_netdisk_app_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:id="@id/share_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/share_alert" android:singleLine="true" style="@style/NetDisk.TextAppearance.Middle.Black" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/share_title_receiver" style="@style/NetDisk.TextAppearance.Middle.Black" />
+            <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:fillViewport="true" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:orientation="vertical" android:id="@id/address_box_layout" android:background="@drawable/editview_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:layout_alignParentBottom="true">
+                        <com.baidu.netdisk.ui.AddressBox android:id="@id/address_box" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                    </RelativeLayout>
+                    <Button android:id="@id/add_from_contacts" android:background="@drawable/addman_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignBottom="@id/address_box_layout" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </ScrollView>
+            <TextView android:id="@id/message_address_wrong_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:text="@string/message_address_wrong_tips" style="@style/NetDisk.TextAppearance.Smaller.Red" />
+            <TextView android:id="@id/message_content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:text="" style="@style/NetDisk.TextAppearance.Middle.Black" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/message_content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textAppearance="@style/NetDisk.TextAppearance.Middle.Gray" android:id="@id/message_content_share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/message_content_share_title" />
+                <ListView android:id="@id/share_file_list" android:scrollbars="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:drawSelectorOnTop="false" />
+                <TextView android:textAppearance="@style/NetDisk.TextAppearance.Middle.Gray" android:id="@id/message_validity_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <Button android:textSize="18.0dip" android:textColor="@color/white_to_semitransparent" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/send_share" android:background="@drawable/button_blue_selector" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:text="@string/send" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

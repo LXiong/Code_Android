@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="60dip">
+
+    <TextView
+        android:id="@+id/blockName"
+        android:text="板块名称"
+        android:gravity="center"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="60dip"/>
+
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="1dip"
+        android:layout_height="60dip">
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/blockRange"
+        android:text="平均涨幅"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="60dip"/>
+
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="1dip"
+        android:layout_height="60dip">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/blockSumHand"
+        android:text="成交量(手)"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="60dip"/>
+
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="1dip"
+        android:layout_height="60dip">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/blockSumPrice"
+        android:text="成交额(亿)"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="60dip"/>
+
+
+
+</LinearLayout>

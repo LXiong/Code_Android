@@ -1,0 +1,376 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/Indigo_colorPrimaryDark">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tradeHome"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:background="@color/Indigo_colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:text="原始仓位:"
+                android:textColor="@android:color/white"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/originMoney"
+                android:textColor="#F59012"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/Indigo_colorPrimaryDark">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:text="资金总额:"
+                android:textColor="@android:color/white"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/sumMoney"
+                android:layout_width="0dip"
+                android:textColor="#F59012"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                >
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Indigo_colorPrimaryDark">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:text="股票市值:"
+                android:textColor="@android:color/white"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/marketMoney"
+                android:layout_width="0dip"
+                android:textColor="#F59012"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/Indigo_colorPrimaryDark">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:text="可用资金:"
+                android:textColor="@android:color/white"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/restMoney"
+                android:layout_width="0dip"
+                android:textColor="#F59012"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                >
+            </TextView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Indigo_colorPrimaryDark">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:text="当前收益:"
+                android:textColor="@android:color/white"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/earnMoney"
+                android:layout_width="0dip"
+                android:textColor="#F59012"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/Indigo_colorPrimaryDark">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textColor="@android:color/white"
+                android:text="收益率:">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/earnRate"
+                android:layout_width="0dip"
+                android:textColor="#F59012"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                >
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/linear_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F59012"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:text="行情概览"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="#e3e3e3">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/linear_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F59012"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:text="板块行情"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#e3e3e3">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/linear_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F59012"
+                android:textSize="50sp"/>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:text="自选股"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="#e3e3e3">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/linear_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F59012"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:text="模拟炒股"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

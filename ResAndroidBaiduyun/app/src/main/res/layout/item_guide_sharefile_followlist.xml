@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/NetDisk.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/name_text" android:paddingTop="@dimen/item_content_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="姓名" style="@style/NetDisk.TextAppearance.Middle.Black" />
+    <TextView android:id="@id/phone_text" android:paddingBottom="@dimen/item_content_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13800138000" android:maxLines="1" android:layout_alignLeft="@id/name_text" android:layout_alignRight="@id/checkbox" android:layout_alignParentBottom="true" style="@style/NetDisk.TextAppearance.Smaller.Gray" />
+    <ImageView android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_unselected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>
