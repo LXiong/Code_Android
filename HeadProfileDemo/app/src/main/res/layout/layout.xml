@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center">
+    
+    <com.head_portrait.My_View 
+        android:id="@+id/head_portrait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher">        
+    </com.head_portrait.My_View>
+
+</LinearLayout>

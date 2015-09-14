@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UserLoginRegDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_dont_need_login">ActivityDontNeedLogin</string>
+    <string name="title_activity_activity_need_login">ActivityNeedLogin</string>
+    <string name="title_activity_activity_login">ActivityLogin</string>
+</resources>

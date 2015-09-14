@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/MyCode/Code_Android/HeadProfileDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/MyCode/Code_Android/HeadProfileDemo/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-c9eb8a6098210ca6a5d6a8a320b92499360e94ab.jar" />
+    </item>
+    <item
+        jar="/MyCode/Code_Android/HeadProfileDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/MyCode/Code_Android/HeadProfileDemo/app/build/intermediates/pre-dexed/debug/classes-977e03336b9e704931166847ecafd7546e90087f.jar" />
+    </item>
+    <item
+        jar="/Users/tusm/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/MyCode/Code_Android/HeadProfileDemo/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-74c8bbeb99653136aed77fd88bc47d2e86d6d4f9.jar" />
+    </item>
+    <item
+        jar="/MyCode/Code_Android/HeadProfileDemo/app/libs/android-smart-image-view-1.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d76ea8c3e9a60101244d6d04aff8cc75888570f0">
+        <dex dex="/MyCode/Code_Android/HeadProfileDemo/app/build/intermediates/pre-dexed/debug/android-smart-image-view-1.0.0-ee2f44590a5bfcbd0e15fddfa016f5824ac5e945.jar" />
+    </item>
+    <item
+        jar="/MyCode/Code_Android/HeadProfileDemo/app/libs/xUtils-2.6.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="455d08e790d5728ef6fd13ad4f6a524726c7bd9b">
+        <dex dex="/MyCode/Code_Android/HeadProfileDemo/app/build/intermediates/pre-dexed/debug/xUtils-2.6.2-c69d6c0d6ba3e73ff111853878371c5a48351b3a.jar" />
+    </item>
+
+</items>
