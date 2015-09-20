@@ -1,11 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="50dip"
     android:background="?attr/colorPrimary"
-    android:minHeight="?attr/actionBarSize">
+    android:layout_marginLeft="-17dip"
+    android:minHeight="50dip">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RadioGroup
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent">
+
+
+            <RadioButton
+                android:id="@+id/btn1"
+                android:text="a"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/header_icon_btn"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"/>
+
+            <RadioButton
+                android:id="@+id/btn2"
+                android:text="b"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/header_icon_btn"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"/>
+
+            <RadioButton
+                android:id="@+id/btn3"
+                android:text="c"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/header_icon_btn"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:checked="false"
+                />
+
+        </RadioGroup>
+
+
+
+        <RadioButton
+            android:text="d"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:id="@+id/btn4"
+            android:button="@null"
+            android:background="@drawable/header_icon_btn"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
 </android.support.v7.widget.Toolbar>
 
 

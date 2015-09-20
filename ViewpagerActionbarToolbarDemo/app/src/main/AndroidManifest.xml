@@ -20,6 +20,18 @@
             android:name=".ActivityTest"
             android:label="@string/title_activity_activity_test" >
         </activity>
+        <activity
+            android:name=".ActivityOne"
+            android:label="@string/title_activity_activity_one" >
+        </activity>
+        <activity
+            android:name=".ActivityTwo"
+            android:label="@string/title_activity_activity_two" >
+        </activity>
+        <activity
+            android:name=".ActivityThree"
+            android:label="@string/title_activity_activity_three" >
+        </activity>
     </application>
 
 </manifest>
